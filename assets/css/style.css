@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Work+Sans:wght@400;600;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --biru: #297bbf;
+  --abu: #f6f6f6;
+}
+
+h2 {
+  font-size: 36px !important ;
+  font-weight: 700;
+}
+h3 {
+  font-size: 24px !important;
+  font-weight: 700;
+}
+h4 {
+  font-size: 18px !important;
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+  margin: 0px;
+}
+.f12 {
+  font-size: 12px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.pt100 {
+  padding-top: 100px;
+}
+.pb100 {
+  padding-bottom: 100px;
+}
+.pt50 {
+  padding-top: 50px;
+}
+.pb50 {
+  padding-bottom: 50px;
+}
+.p50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.biru {
+  color: var(--biru);
+}
+.bg-biru {
+  background-color: var(--biru);
+  color: white;
+}
+.btn-biru {
+  background-color: var(--biru);
+  color: white;
+}
+.bg-abu {
+  background-color: var(--abu);
+}
+.tengah {
+  display: flex;
+  justify-content: center;
+}
+.bold {
+  font-weight: 700;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #297bbf;
+  padding: 5px 15px;
+  background-color: white;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.topi {
+  background-image: url("../img/topi.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
