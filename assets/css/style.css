@@ -54,6 +54,11 @@ p {
   margin-bottom: 15px;
 }
 
+.p100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .pt100 {
   padding-top: 100px;
 }
@@ -86,6 +91,10 @@ p {
 .btn-biru {
   background-color: var(--biru);
   color: white;
+  font-weight: 700;
+}
+#file-upload-button {
+  background-color: white !important;
 }
 .bg-abu {
   background-color: var(--abu);
@@ -118,4 +127,28 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   height: 700px;
+}
+
+.gambarformdaftar {
+  background-image: url("../img/image\ 15.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+label {
+  display: block;
+}
+
+.daftarbeasiswa small {
+  color: var(--biru);
+  display: block;
 }
