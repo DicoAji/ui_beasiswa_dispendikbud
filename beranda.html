@@ -30,17 +30,16 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-biru">
       <div class="container">
-        <div class="navbar-brand logo d-flex">
+        <div class="navbar-brand logo d-flex me-auto">
           <img
             class="d-inline"
             src="assets/img/logo-kabupaten-batang 2.png"
             alt=""
           />
-          <h4 class="d-flex align-items-center bold">
+          <h4 class="d-flex align-items-center bold ms">
             Pemerintah Kabupaten Batang
           </h4>
         </div>
-
         <button
           class="navbar-toggler text-white"
           type="button"
@@ -50,155 +49,159 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon">IIII</span>
+          <span class="navbar-toggler-icon"
+            ><i class="bi bi-list text-white"></i
+          ></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          style="right: 0"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Alur</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Daftar Beasiswa</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Masuk</a>
-            </li>
-          </ul>
+          <div class="d-flex">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Informasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Daftar Beasiswa</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Masuk</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
-    <div class="container pt50 pb50">
-      <div class="row">
-        <div class="col-lg-8 col-12">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/img/poster.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/img/poster.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/img/poster.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
+    <div class="bg-abu pt50 pb50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12 border">
-          <h3 class="mt15">Berita terbaru</h3>
-          <div class="border-bottom p-1 mt15">
-            <div class="row">
-              <div class="col-4">
-                <img src="assets/img/nadim.png" alt="" />
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-              <div class="col-8">
-                <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                  Dignissim.
-                </p>
-                <a href="">Selengkapnya</a>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/img/poster.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/poster.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/poster.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <div class="border-bottom p-2 mt15">
-            <div class="row">
-              <div class="col-4">
-                <img src="assets/img/nadim.png" alt="" />
-              </div>
-              <div class="col-8">
-                <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                  Dignissim.
-                </p>
-                <a href="">Selengkapnya</a>
+          <div class="col-lg-4 col-12 border">
+            <h3 class="mt15">Berita terbaru</h3>
+            <div class="border-bottom p-1 mt15">
+              <div class="row">
+                <div class="col-4">
+                  <img src="assets/img/nadim.png" alt="" />
+                </div>
+                <div class="col-8">
+                  <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                    Dignissim.
+                  </p>
+                  <a href="">Selengkapnya</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="border-bottom p-2 mt15">
-            <div class="row">
-              <div class="col-4">
-                <img src="assets/img/nadim.png" alt="" />
+            <div class="border-bottom p-2 mt15">
+              <div class="row">
+                <div class="col-4">
+                  <img src="assets/img/nadim.png" alt="" />
+                </div>
+                <div class="col-8">
+                  <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                    Dignissim.
+                  </p>
+                  <a href="">Selengkapnya</a>
+                </div>
               </div>
-              <div class="col-8">
-                <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                  Dignissim.
-                </p>
-                <a href="">Selengkapnya</a>
+            </div>
+            <div class="border-bottom p-2 mt15">
+              <div class="row">
+                <div class="col-4">
+                  <img src="assets/img/nadim.png" alt="" />
+                </div>
+                <div class="col-8">
+                  <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                    Dignissim.
+                  </p>
+                  <a href="">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
@@ -206,9 +209,50 @@
       </div>
     </div>
 
+    <div class="container p100">
+      <div class="tengah">
+        <h3>Kuota dan Alokasi</h3>
+      </div>
+      <div class="row mt50">
+        <div class="col-lg-4 col-12">
+          <div class="tengah">
+            <img src="assets/img/Vector.png" alt="" />
+          </div>
+          <div class="tengah mt-4">
+            <h4>Peserta Didik</h4>
+          </div>
+          <div class="tengah">
+            <p><span id="jumlahpesertadidik">200</span> orang</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="tengah">
+            <img src="assets/img/Vector.png" alt="" />
+          </div>
+          <div class="tengah mt-4">
+            <h4>Calon Mahasiswa</h4>
+          </div>
+          <div class="tengah">
+            <p><span id="jumlahpesertadidik">200</span> orang</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="tengah">
+            <img src="assets/img/Vector.png" alt="" />
+          </div>
+          <div class="tengah mt-4">
+            <h4>Mahasiswa</h4>
+          </div>
+          <div class="tengah">
+            <p><span id="jumlahpesertadidik">200</span> orang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="bg-abu pt50 pb50">
       <div class="container">
-        <h4 class="text-center">Jalur Beasiswa</h4>
+        <h3 class="text-center">Jalur Beasiswa</h3>
         <div class="row mt50">
           <div class="col-lg-4 col-md-6 col-12">
             <div class="p-4 bg-white border">

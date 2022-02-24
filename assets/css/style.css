@@ -21,6 +21,12 @@ h4 {
   font-size: 18px !important;
   font-weight: 700;
 }
+
+h5 {
+  font-size: 15px !important;
+  font-weight: 700;
+}
+
 p {
   font-size: 14px;
   margin: 0px;
@@ -118,8 +124,8 @@ p {
 }
 
 .nav-item {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .topi {
   background-image: url("../img/topi.png");
