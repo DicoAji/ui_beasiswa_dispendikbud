@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+html {
+  height: 100%;
+}
 :root {
   --biru: #297bbf;
   --abu: #f6f6f6;
@@ -76,7 +79,7 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.py40{
+.py40 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -112,6 +115,16 @@ p {
 .btn-primary {
   background-color: var(--biru);
 }
+.btn-white {
+  background-color: white;
+  font-family: 700;
+  color: black;
+  border: 1px solid;
+}
+.btn-white:hover {
+  background-color: #f7f7f7;
+}
+
 #file-upload-button {
   background-color: white !important;
 }
@@ -125,14 +138,14 @@ p {
 .bold {
   font-weight: 700;
 }
-.dropdown{
+.dropdown {
   text-decoration: none;
 }
-.text-red{
-  color: #DC3545;
+.text-red {
+  color: #dc3545;
 }
-.card{
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.05);
+.card {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
   border: none;
 }
 .required-label {
@@ -161,20 +174,21 @@ p {
 .nav-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 700;
-  transition: color .4s , background-color .4s,  border-radius .4s;
+  transition: color 0.4s, background-color 0.4s, border-radius 0.4s;
 }
-.nav-link:focus{
+.nav-link:focus {
   color: white !important;
 }
-.nav-link:hover{
+.nav-link:hover {
   color: #ffffff;
 }
-.navbarNav:hover{
+.navbarNav:hover {
   color: #297bbf !important;
   background-color: white !important;
   border-radius: 12px;
-  transition: color .4s , background-color .4s, border-radius .4s;
+  transition: color 0.4s, background-color 0.4s, border-radius 0.4s;
 }
+
 .nav-item {
   margin-left: 25px;
   margin-right: 25px;
@@ -184,10 +198,9 @@ p {
 }
 .navbar-nav .dropdown:hover .dropdown-menu {
   display: block;
-  transition: display .5s;
+  transition: display 0.5s;
 }
-
-
+/* background img */
 
 .topi {
   background-image: url("../img/topi.png");
@@ -205,6 +218,15 @@ p {
   height: 650px;
 }
 
+.img-contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gambar-laporan {
+  background-image: url("../img/4025514\ 1.png");
+  height: 400px;
+}
 input,
 textarea {
   outline: none;
@@ -228,7 +250,7 @@ label {
 .vl {
   border-left: 1.5px solid var(--biru);
 }
-.icon-informasi{
+.icon-informasi {
   font-size: 100px;
   color: var(--biru);
 }
@@ -238,8 +260,6 @@ label {
 /*******************************************/
 /*=============== tablet view ===============*/
 @media (max-width: 991px) {
-
-
 }
 
 @media (max-width: 767px) {
@@ -254,5 +274,4 @@ label {
 
 /*=============== phone view ===============*/
 @media (max-width: 576px) {
-
 }
