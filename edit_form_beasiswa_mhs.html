@@ -231,7 +231,8 @@
                         </div>
                         <!-- end Pendidikan Terakhir Ayah -->
                         <div class="mb-3">
-                            <label for="usia" class="form-label">Usia<span class="required-label">*</span></label>
+                            <label for="usia" class="form-label">Usia Ayah / Wali<span
+                                    class="required-label">*</span></label>
                             <input type="number" maxlength="10" class="form-control" id="usia" placeholder="">
                         </div>
                         <!-- end usia -->
@@ -281,7 +282,8 @@
                         </div>
                         <!-- end Pendidikan Terakhir Ibu -->
                         <div class="mb-3">
-                            <label for="usia" class="form-label">Usia <span class="required-label">*</span></label>
+                            <label for="usia" class="form-label">Usia Ibu / Wali <span
+                                    class="required-label">*</span></label>
                             <input type="number" maxlength="10" class="form-control" id="usia" placeholder="">
                         </div>
                         <!-- end usia -->
@@ -306,6 +308,13 @@
                 <div class="row pb40">
                     <div class="col-12 col-md-6">
                         <div class="mb-3">
+                            <label for="scan_kk" class="form-label">Scan Kartu Keluarga (KK) <span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" name="scan_kk" type="file" accept="pdf/*" id="formFile">
+                        </div>
+                        <!-- end scan KK -->
+                        <div class="mb-3">
                             <label for="scan_ktp" class="form-label">Scan Kartu Tanda Penduduk (KTP) <span
                                     class="required-label">*</span> <span class="text-red fs12">Format file
                                     .pdf</span></label>
@@ -313,48 +322,72 @@
                         </div>
                         <!-- end scan KTP -->
                         <div class="mb-3">
-                            <label for="scan_ipk" class="form-label">Scan IPK Terakhir<span
+                            <label for="scan_ktm" class="form-label">Scan Kartu Tanda Mahasiswa (KTM) <span
                                     class="required-label">*</span> <span class="text-red fs12">Format file
                                     .pdf</span></label>
-                            <input class="form-control" name="scan_ipk" type="file" name="scan_ipk" accept="pdf/*"
+                            <input class="form-control" name="scan_ktm" type="file" accept="pdf/*" id="formFile">
+                        </div>
+                        <!-- end scan KTM -->
+                        <div class="mb-3">
+                            <label for="scan_akreditasi_pt" class="form-label">Scan Surat Akreditasi Perguruan Tinggi
+                                <span class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" name="scan_akreditasi_pt" type="file" accept="pdf/*"
                                 id="formFile">
                         </div>
-                        <!-- end scan_ipk -->
+                        <!-- end scan_akreditasi_pt -->
+                        <div class="mb-3">
+                            <label for="scan_proposal" class="form-label">Scan Proposal Bantuan <span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" name="scan_proposal" type="file" accept="pdf/*" id="formFile">
+                        </div>
+                        <!-- end scan_proposal -->
+                    </div>
+                    <div class="col-12 col-md-6">
                         <div class="mb-3">
                             <label for="scan_prestasi" class="form-label">Scan Prestasi <span
                                     class="required-label">*</span> <span class="text-red fs12">Format file
                                     .rar</span></label>
-                            <p class="biru mb-3">Prestasi antara lain : prestasi akademik, non akademik, paskibra,
+                            <p class="biru mb-3">Prestasi antara lain : prestasi akademik, non akademik,
                                 peserta
-                                lomba individu
-                                peserta lomba kelompok, surat keterangan hafiz
+                                lomba perorangan,
+                                peserta lomba kelompok, surat keterangan tahfidz / lulus tahfidz Al Quran dengan minimal
+                                5 juz, nilai ujian sekolah, sertifikat bahasa inggris atau bahasa arab yang masih
+                                berlaku
                                 <span class="bold">
-                                    (Dapat mengupload lebih dari satu prestasi kemudian dimasukkan dalam rar)
+                                    (Jika prestasi lebih dari satu, scan prestasi harus dijadikan dalam satu pdf)
                                 </span>
                             </p>
-                            <input class="form-control" type="file" id="formFile">
+                            <input class="form-control" name="scan_prestasi" type="file" id="formFile">
                         </div>
                         <!-- end prestasi -->
-                    </div>
-                    <div class="col-12 col-md-6">
-
-                        <div class="mb-3">
-                            <label for="scan_sertif_inggris" class="form-label">Scan Sertifikat Bahasa Inggris<span
+                        <!-- <div class="mb-3">
+                            <label for="scan_ujian_sekolah" class="form-label">Scan Nilai Ujian Sekolah<span
                                     class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" type="file" name="scan_ujian_sekolah" accept="pdf/*"
+                                id="formFile">
+                        </div> -->
+                        <!-- end scan_ujian_sekolah -->
+                        <!-- <div class="mb-3">
+                            <label for="scan_sertif_inggris" class="form-label">Scan Sertifikat Bahasa Inggris atau
+                                Bahasa Arab <span class="text-red fs12">Format file
                                     .pdf</span></label>
                             <input class="form-control" type="file" name="scan_sertif_inggris" accept="pdf/*"
                                 id="formFile">
-                        </div>
+                        </div> -->
                         <!-- end scan sertif_inggris -->
                         <div class="mb-3">
-                            <label for="scan_ktp" class="form-label">Scan Surat Keterangan Tidak Mampu <span
+                            <label for="scan_sktm" class="form-label">Scan Surat Keterangan Tidak Mampu <span
                                     class="required-label">*</span> <span class="text-red fs12">Format file
                                     .pdf</span></label>
                             <p class="biru mb-3">RTSM/RTM, PKH, KIP, Surat desa yatim/piatu
                             </p>
-                            <input class="form-control" type="file" id="formFile">
+                            <input class="form-control" name="scan_sktm" type="file" id="formFile">
                         </div>
-                        <!-- end prestasi -->
+                        <!-- end sktm -->
+
                     </div>
                 </div>
                 <!-- end lampiran dokumen -->
@@ -373,7 +406,7 @@
                 </div>
                 <div class="row pb40 ">
                     <div class="col-12 text-end">
-                        <a href="form_beasiswa_mhs.html" class="btn btn-danger fs18">Batal</a>
+                        <a href="form_beasiswa_mhs.html" class="btn btn-danger fs18 me-3">Batal</a>
                         <button type="submit" class="btn btn-primary fs18">Kirim</button>
                     </div>
                 </div>
