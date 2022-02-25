@@ -1,353 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informasi</title>
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-biru">
-      <div class="container">
-        <div class="navbar-brand logo d-flex me-auto">
-          <img
-            class="d-inline"
-            src="assets/img/logo-kabupaten-batang 2.png"
-            alt=""
-          />
-          <h4 class="d-flex align-items-center bold ms">
-            Pemerintah Kabupaten Batang
-          </h4>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beasiswa Batang | Informasi</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- ICON -->
+  <script src="https://kit.fontawesome.com/5fbcc24921.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-biru" id="navbar">
+    <div class="container">
+      <div class="navbar-brand logo d-flex me-auto">
+        <img class="d-inline" src="assets/img/logo-kabupaten-batang 2.png" alt="" />
+        <h4 class="d-flex align-items-center ms-2">
+          Dinas Pendidikan dan Kebudayaan <br> Kabupaten Batang
+        </h4>
+      </div>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-list text-white"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+        <div class="d-flex justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item align-self-center">
+              <a class="nav-link navbarNav" id="nav__beranda" href="beranda.html">Beranda</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link navbarNav" id="nav__informasi" href="informasi.html">Informasi</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link navbarNav" id="nav__beasiswa" href="pendaftaran_beasiswa.html">Pendaftaran Beasiswa</a>
+            </li>
+
+            <!-- <li class="nav-item">
+                <a class="" href="#"><i class="bi bi-person-circle"></i></a>
+              </li> -->
+            <li class="nav-item align-self-center mx-4 dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-person-circle fs-4"></i>
+              </a>
+              <ul class="dropdown-menu min-w__20 p-2" aria-labelledby="navbarDropdown">
+                <div class="d-flex">
+                  <p class="mx-2 align-self-center"><?= user()->email; ?></p>
+                </div>
+                <hr class="dropdown-divider">
+                <!-- <li><a class="dropdown-item" href="<?= base_url(); ?>/user/edit_akun_user">Edit akun</a>
+                    </li>
+                    <li><a class="dropdown-item" href="<?= base_url(); ?>/user/daftar_akun">Manajemen
+                            akun</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li> -->
+                <!-- <li><a class="dropdown-item" href="<?= base_url(); ?>/logout">Logout</a></li> -->
+                <li>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-modal" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <button
-          class="navbar-toggler text-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"
-            ><i class="bi bi-list text-white"></i
-          ></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      </div>
+    </div>
+  </nav>
 
-          <div class="d-flex">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Informasi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Daftar Beasiswa</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Masuk</a>
-              </li>
-            </ul>
+  <div class="bg-abu pb40 pt100">
+    <div class="container">
+      <h2 class="mb20">Informasi</h2>
+      <h3 class="fw-normal mb20 text-red">*Silahkan lengkapi data diri <span class="rekening visually-hidden">dengan
+          menambahkan
+          nomor
+          rekening</span></h3>
+      <a href="#" hidden><button class="btn btn-primary">Tambah Nomer Rekening</button></a>
+      <div class="sub-informasi mb20">
+        <h3 class="mb20">Persyaratan Penerima Bantuan</h3>
+        <div class="card">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste nulla sint ipsa? Eaque non, quas
+            vero molestias fugiat minima numquam ad? Reiciendis labore debitis minima eaque nostrum impedit dolorum!
           </div>
         </div>
       </div>
-    </nav>
-
-    <div class="bg-abu p50">
-      <div class="container">
-        <h3>Alur Pendaftaran Beasiswa</h3>
-        <div class="alur">
-          <div class="langkah1">
-            <h4 class="biru">Langkah1</h4>
-            <div class="container-fluid p-lg-5 p-md-4 p-2 bg-white">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="tengah">
-                    <img src="assets/img/user-circle-solid 2.png" alt="" />
-                  </div>
-                  <div class="tengah">
-                    <h5>Buat Akun</h5>
-                  </div>
-                  <div class="tengah">
-                    <p>Buat akun beasiswa Anda!</p>
-                  </div>
+      <!-- end persyaratan -->
+      <div class="sub-informasi mb20">
+        <h3 class="mb20">Jadwal Pendaftaran</h3>
+        <div class="card">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste nulla sint ipsa? Eaque non, quas
+            vero molestias fugiat minima numquam ad? Reiciendis labore debitis minima eaque nostrum impedit dolorum!
+          </div>
+        </div>
+      </div>
+      <!-- end jadwal -->
+      <div class="sub-informasi mb20">
+        <h3 class="mb20">Proses Seleksi</h3>
+        <div class="card">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste nulla sint ipsa? Eaque non, quas
+            vero molestias fugiat minima numquam ad? Reiciendis labore debitis minima eaque nostrum impedit dolorum!
+          </div>
+        </div>
+      </div>
+      <!-- end seleksi -->
+      <h2 class="mb20 mt40">Alur Pendaftaran</h2>
+      <div class="alur">
+        <div class="langkah mb20">
+          <h4 class="biru mb-2">Langkah 1</h4>
+          <div class="container-fluid card p-lg-5 p-md-4 p-2 bg-white">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 d-flex">
+                <div class="text-center mb20 col-md-11 col-12">
+                  <img src="assets/img/user-circle-solid 2.png" alt="" class="mb20" />
+                  <h4>Daftar Beasiswa</h4>
+                  <p>Sesuaikan dengan kebutuhan anda!</p>
                 </div>
-                <div class="col-lg-8 col-md-6 col-12 ps-4">
-                  <h5>Petunjuk</h5>
-                  <p>
-                    1. Pengguna membuat akun beasiswa melalui link
-                    <a href="">www.daftar.com</a> atau klik menu
-                    <a href="" class="bold">Daftar</a>
-                  </p>
-                </div>
+                <div class="vl col-1"></div>
+              </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-4">
+                <h4>Petunjuk</h4>
+                <p>
+                  1. Pengguna membuat akun beasiswa melalui link
+                  <a href="">www.daftar.com</a> atau klik menu
+                  <a href="" class="bold">Pendaftaran Beasiswa</a>
+                </p>
+                <p>
+                  2. Pilih beasiswa sesuai dengan kebutuhan Anda
+                </p>
+                <p>
+                  3. Klik tombol Daftar
+                </p>
+                <p>
+                  4. Masukkan data Anda sesuai dengan form yang tersedia
+                </p>
+                <p>
+                  5. Lampirkan dokumen pribadi Anda, seperti foto diri, scan KTP, prestasi, dan lain lain
+                </p>
+                <p>
+                  6. Setelah data lengkap, klik tombol Daftar
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container p50">
-      <div class="row">
-        <div class="col-lg-7 col-12">
-          <div class="informasibeasiswa">
-            <h4>Informasi Beasiswa</h4>
-            <p class="f12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-              volutpat suspendisse cras amet, a pellentesque risus massa. Ut
-              pellentesque sapien pretium dui sollicitudin vulputate eu aliquet.
-              Nunc dui mollis egestas scelerisque aliquam odio mattis arcu.
-              Tristique vel amet tincidunt amet tortor tellus auctor cras velit.
-              Platea mattis pharetra ultricies sit cursus arcu sed. Nunc
-              bibendum commodo, leo rutrum viverra lectus id faucibus interdum.
-              Gravida turpis nunc tortor urna ut id commodo. Semper tortor,
-              risus porttitor condimentum etiam. Tellus consectetur dolor
-              blandit eu facilisis mi etiam. Nibh ipsum nullam commodo dictum
-              vitae eu. Augue egestas pellentesque sit porttitor luctus rhoncus
-              viverra. In sit vel faucibus massa integer nulla. Massa vestibulum
-              urna placerat ultrices aliquam suspendisse. Placerat consequat
-              aliquet in leo rutrum risus. Pellentesque dictum vestibulum in
-              varius odio commodo eu, et egestas. Quam integer scelerisque
-              imperdiet ridiculus. Tincidunt vulputate cras eget ultrices.
-              Vivamus fusce vulputate ut orci facilisi tellus, est eu. Faucibus
-              a faucibus ridiculus nulla metus, sit netus id.
-            </p>
-          </div>
-          <div class="tujuan mt50">
-            <h4>Informasi</h4>
-            <p class="f12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-              volutpat suspendisse cras amet, a pellentesque risus massa. Ut
-              pellentesque sapien pretium dui sollicitudin vulputate eu aliquet.
-              Nunc dui mollis egestas scelerisque aliquam odio mattis arcu.
-              Tristique vel amet tincidunt amet tortor tellus auctor cras velit.
-              Platea mattis pharetra ultricies sit cursus arcu sed. Nunc
-              bibendum commodo, leo rutrum viverra lectus id faucibus interdum.
-              Gravida turpis nunc tortor urna ut id commodo. Semper tortor,
-              risus porttitor condimentum etiam. Tellus consectetur dolor
-              blandit eu facilisis mi etiam. Nibh ipsum nullam commodo dictum
-              vitae eu. Augue egestas pellentesque sit porttitor luctus rhoncus
-              viverra. In sit vel faucibus massa integer nulla. Massa vestibulum
-              urna placerat ultrices aliquam suspendisse. Placerat consequat
-              aliquet in leo rutrum risus. Pellentesque dictum vestibulum in
-              varius odio commodo eu, et egestas. Quam integer scelerisque
-              imperdiet ridiculus. Tincidunt vulputate cras eget ultrices.
-              Vivamus fusce vulputate ut orci facilisi tellus, est eu. Faucibus
-              a faucibus ridiculus nulla metus, sit netus id.
-            </p>
-          </div>
-          <div class="syaratdanketentuan mt50">
-            <h4>Syarat dan Ketentuan</h4>
-            <p class="f12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-              volutpat suspendisse cras amet, a pellentesque risus massa. Ut
-              pellentesque sapien pretium dui sollicitudin vulputate eu aliquet.
-              Nunc dui mollis egestas scelerisque aliquam odio mattis arcu.
-              Tristique vel amet tincidunt amet tortor tellus auctor cras velit.
-              Platea mattis pharetra ultricies sit cursus arcu sed. Nunc
-              bibendum commodo, leo rutrum viverra lectus id faucibus interdum.
-              Gravida turpis nunc tortor urna ut id commodo. Semper tortor,
-              risus porttitor condimentum etiam. Tellus consectetur dolor
-              blandit eu facilisis mi etiam. Nibh ipsum nullam commodo dictum
-              vitae eu. Augue egestas pellentesque sit porttitor luctus rhoncus
-              viverra. In sit vel faucibus massa integer nulla. Massa vestibulum
-              urna placerat ultrices aliquam suspendisse. Placerat consequat
-              aliquet in leo rutrum risus. Pellentesque dictum vestibulum in
-              varius odio commodo eu, et egestas. Quam integer scelerisque
-              imperdiet ridiculus. Tincidunt vulputate cras eget ultrices.
-              Vivamus fusce vulputate ut orci facilisi tellus, est eu. Faucibus
-              a faucibus ridiculus nulla metus, sit netus id.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-5 col-12">
-          <div class="topi"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="p50 bg-abu">
-      <div class="tengah">
-        <h3>Jenis Beasiswa</h3>
-      </div>
-      <div class="container">
-        <div class="mt50">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="p-4">
-                <div class="tengah">
-                  <img src="assets/img/tropi.png" alt="" />
+        <!-- end langkah 1 -->
+        <div class="langkah mb-2">
+          <h4 class="biru mb20">Langkah 2</h4>
+          <div class="container-fluid card p-lg-5 p-md-4 p-2 bg-white">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 d-flex">
+                <div class="text-center mb20 col-md-11 col-12">
+                  <i class="fas fa-bullhorn icon-informasi mb20"></i>
+                  <h4>Seleksi Admin</h4>
+                  <p>Proses seleksi Calon Penerima Beasiswa</p>
                 </div>
-                <div class="tengah">
-                  <p>Prestasi</p>
-                </div>
+                <div class="vl col-1"></div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="p-4">
-                <div class="tengah">
-                  <img src="assets/img/quran.png" alt="" />
-                </div>
-                <div class="tengah">
-                  <p>Hafiz Quran</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="p-4">
-                <div class="tengah">
-                  <img src="assets/img/image 16.png" alt="" />
-                </div>
-                <div class="tengah">
-                  <p>Keluarga Kurang Mampu</p>
-                </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-4">
+                <h4>Petunjuk</h4>
+                <p>
+                  1. Pemeringkatan prestasi paling tinggi berdasarkan tabel bobot prestasi
+                </p>
+                <p>
+                  2. Hanya diambil 1 prestasi paling tinggi
+                </p>
+                <p>
+                  3. Apabila bobot calon penerima sama, diprioritaskan ke ekonomi orang tua → cek penghasilan
+                </p>
+                <p>
+                  4. Tim dapat melakukan uji sederhana bagi hafiz, akan ada pemberitahuan di web
+                </p>
+                <p>
+                  5. Penerimaan bantuan sesuai jadwal yg ditetapkan di web
+                </p>
+                <p>
+                  6. Keputusan dinas bersifat final
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- penjualan -->
-    <div class="p50">
-      <div class="container">
-        <h3 class="tengah">Penjadwalan</h3>
-        <div class="row mt25">
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4">
-              <p class="tengah">SMA/SMK/MA sederajat</p>
-              <table class="table">
-                <thead>
-                  <tr class="bg-biru">
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4">
-              <p class="tengah">Calon Mahasiswa</p>
-              <table class="table">
-                <thead>
-                  <tr class="bg-biru">
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-            <p class="tengah">Mahasiswa</p>
-            <div class="p-4">
-              <table class="table">
-                <thead>
-                  <tr class="bg-biru">
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
+        <!-- end langkah 2 -->
+        <div class="langkah mb20">
+          <h4 class="biru mb-2">Langkah 3</h4>
+          <div class="container-fluid card p-lg-5 p-md-4 p-2 bg-white">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 d-flex">
+                <div class="text-center mb20 col-md-11 col-12">
+                  <i class="fas fa-money-check mb20 icon-informasi"></i>
+                  <h4>Laporan Dana</h4>
+                  <p>Lengkapi data dan laporan penggunaan dana</p>
+                </div>
+                <div class="vl col-1"></div>
+              </div>
+              <div class="col-lg-8 col-md-6 col-12 ps-4">
+                <h4>Petunjuk</h4>
+                <p>
+                  1. Admin akan mengiriman notifikasi apakah Anda lolos seleksi dan layak mendapatkan beasiswa
+                </p>
+                <p>
+                  2. Jika lolos, maka lengkapi data dengan menambahkan nomor rekening sebagai rekening penerimaan
+                  beasiswa
+                </p>
+                <p>
+                  3. Proses pencairan dana membutuhkan waktu dan Admin akan menginformasikan terkait pencairan dana
+                </p>
+                <p>
+                  4. Masukkan data Anda sesuai dengan form yang tersedia
+                </p>
+                <p>
+                  5. Setelah pencairan dana selesai, silahkan isi form laporan penggunaan dana yang tersedia
+                </p>
+                <p>
+                  6. Upload kembali form laporan penggunaan dana sebelum batas waktu yang ditentukan
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <!-- end langkah 3 -->
       </div>
     </div>
+  </div>
 
-    <footer class="bg-biru pt20 pb20">
-      <div class="tengah">
-        <p class="bold">
-          <span class="biru bg-white">©2022.</span> Dinas Pendidikan dan
-          Kebudayaan Kabupaten Batang. All rights reserved
-        </p>
+
+  <footer class="bg-biru pt20 pb20">
+    <div class="text-center">
+      <p class="bold">
+        ©2022. Dinas Pendidikan dan
+        Kebudayaan Kabupaten Batang. All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- LOGOUT  Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="logoutModalLabel">Anda yakin akan keluar?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Pilih "Logout" dibawah jika anda ingin mengakhiri sesimu sekarang.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <a href="<?= base_url(); ?>/logout" class="btn btn-danger">Logout</a>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  <!-- Custom Js -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
 </html>

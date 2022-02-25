@@ -47,11 +47,23 @@ p {
 .mb50 {
   margin-bottom: 50px;
 }
+.mt40 {
+  margin-top: 40px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
 .mt25 {
   margin-top: 25px;
 }
 .mb25 {
   margin-bottom: 25px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
 }
 .mt15 {
   margin-top: 15px;
@@ -64,7 +76,10 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.py40{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .pt100 {
   padding-top: 100px;
 }
@@ -74,8 +89,8 @@ p {
 .pt50 {
   padding-top: 50px;
 }
-.pb50 {
-  padding-bottom: 50px;
+.pb40 {
+  padding-bottom: 40px;
 }
 .p50 {
   padding-top: 50px;
@@ -94,10 +109,8 @@ p {
   background-color: var(--biru);
   color: white;
 }
-.btn-biru {
+.btn-primary {
   background-color: var(--biru);
-  color: white;
-  font-weight: 700;
 }
 #file-upload-button {
   background-color: white !important;
@@ -112,21 +125,61 @@ p {
 .bold {
   font-weight: 700;
 }
-
+.dropdown{
+  text-decoration: none;
+}
+.text-red{
+  color: #DC3545;
+}
+.card{
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.05);
+  border: none;
+}
+/*********************************************/
+/*               NAVBAR                      */
+/*********************************************/
+#navbar {
+  position: fixed;
+  z-index: 1;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
 .nav-link {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 700;
+  transition: color .4s , background-color .4s,  border-radius .4s;
 }
-.nav-link:hover {
-  color: #297bbf;
-  padding: 5px 15px;
-  background-color: white;
+.nav-link:focus{
+  color: white !important;
 }
-
+.nav-link:hover{
+  color: #ffffff;
+}
+.navbarNav:hover{
+  color: #297bbf !important;
+  background-color: white !important;
+  border-radius: 12px;
+  transition: color .4s , background-color .4s, border-radius .4s;
+}
 .nav-item {
   margin-left: 25px;
   margin-right: 25px;
 }
+.navbarNav.active {
+  color: rgba(255, 255, 255);
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  transition: display .5s;
+}
+
+
+
 .topi {
   background-image: url("../img/topi.png");
   background-size: contain;
@@ -157,4 +210,40 @@ label {
 .daftarbeasiswa small {
   color: var(--biru);
   display: block;
+}
+
+/************************************/
+/*            INFORMASI             */
+/************************************/
+/* garis vertikal */
+.vl {
+  border-left: 1.5px solid var(--biru);
+}
+.icon-informasi{
+  font-size: 100px;
+  color: var(--biru);
+}
+
+/*******************************************/
+/*               RESPONSIVES               */
+/*******************************************/
+/*=============== tablet view ===============*/
+@media (max-width: 991px) {
+
+
+}
+
+@media (max-width: 767px) {
+  /************************************/
+  /*            INFORMASI             */
+  /************************************/
+  /* garis vertikal */
+  .vl {
+    border-left: none;
+  }
+}
+
+/*=============== phone view ===============*/
+@media (max-width: 576px) {
+
 }
