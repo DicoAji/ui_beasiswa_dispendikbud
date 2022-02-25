@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beasiswa Batang | Daftar Beasiswa</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- ICON -->
+    <script src="https://kit.fontawesome.com/5fbcc24921.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-biru" id="navbar">
+        <div class="container">
+            <div class="navbar-brand logo d-flex me-auto">
+                <img class="d-inline" src="assets/img/logo-kabupaten-batang 2.png" alt="" />
+                <h4 class="d-flex align-items-center ms-2">
+                    Dinas Pendidikan dan Kebudayaan <br> Kabupaten Batang
+                </h4>
+            </div>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="bi bi-list text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+                <div class="d-flex justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link navbarNav" id="nav__beranda" href="beranda.html">Beranda</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link navbarNav" id="nav__informasi" href="informasi.html">Informasi</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link navbarNav" id="nav__beasiswa"
+                                href="pendaftaran_beasiswa.html">Pendaftaran Beasiswa</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                <a class="" href="#"><i class="bi bi-person-circle"></i></a>
+              </li> -->
+                        <li class="nav-item align-self-center mx-4 dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-person-circle fs-4"></i>
+                            </a>
+                            <ul class="dropdown-menu min-w__20 p-2" aria-labelledby="navbarDropdown">
+                                <div class="d-flex">
+                                    <p class="mx-2 align-self-center"><?= user()->email; ?></p>
+                                </div>
+                                <hr class="dropdown-divider">
+                                <!-- <li><a class="dropdown-item" href="<?= base_url(); ?>/user/edit_akun_user">Edit akun</a>
+                    </li>
+                    <li><a class="dropdown-item" href="<?= base_url(); ?>/user/daftar_akun">Manajemen
+                            akun</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li> -->
+                                <!-- <li><a class="dropdown-item" href="<?= base_url(); ?>/logout">Logout</a></li> -->
+                                <li>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-modal" data-bs-toggle="modal"
+                                        data-bs-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-abu pt100 pb50">
+        <div class="container">
+            <form action="" method="post">
+                <h2 class="mb40">Form Pendaftaran Beasiswa Calon Mahasiswa</h2>
+                <div class="d-flex justify-content-end">
+                    <a href="edit_form_beasiswa_mhs.html" class="btn btn-primary">Ubah Data</a>
+                </div>
+                <!-- Btn Ubah data -->
+                <h3 class="mb20">A. Identitas Diri</h3>
+                <div class="row mb40">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="nama_lengkap" class="form-label">Nama Lengkap <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="nama_lengkap" placeholder="">
+                        </div>
+                        <!-- end nama lengkap -->
+                        <div class="mb-3">
+                            <label for="jenis_kelamin" class="form-label">Jenis Kelamin <span
+                                    class="required-label">*</span></label>
+                            <select class="form-select" aria-label="Default select example" name="jenis_kelamin">
+                                <option selected hidden></option>
+                                <option value="laki">Laki-laki</option>
+                                <option value="perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <!-- end jenis kelamin -->
+                        <div class="mb-3">
+                            <label for="nim" class="form-label">NIM <span class="required-label">*</span></label>
+                            <input type="text" maxlength="10" class="form-control" id="nim" placeholder="">
+                        </div>
+                        <!-- end NIM -->
+                        <div class="mb-3">
+                            <label for="ttl" class="form-label">Tempat, Tanggal Lahir <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="ttl" placeholder="">
+                        </div>
+                        <!-- end Tempat, Tanggal Lahir -->
+                        <div class="mb-3">
+                            <label for="anak_ke" class="form-label">Anak Ke <span
+                                    class="required-label">*</span></label>
+                            <input type="number" class="form-control" id="anak_ke" placeholder="">
+                        </div>
+                        <!-- end anak ke -->
+                        <div class="mb-3">
+                            <label for="no_telepon" class="form-label">Nomer Telepon <span
+                                    class="required-label">*</span></label>
+                            <input type="number" class="form-control" id="no_telepon" placeholder="">
+                        </div>
+                        <!-- end Nomer Telepon -->
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="alamat_rumah" class="form-label">Alamat Rumah <span
+                                    class="required-label">*</span></label>
+                            <textarea class="form-control rounded-3" name="alamat_rumah" id="alamat_rumah"
+                                rows="4"></textarea>
+                        </div>
+                        <!-- end alamat -->
+                        <div class="mb-3">
+                            <label for="nama_pt" class="form-label">Nama Perguruan Tinggi <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="nama_pt" placeholder="">
+                        </div>
+                        <!-- end nama_pt -->
+                        <div class="mb-3">
+                            <label for="akrediktasi" class="form-label">Akrediktasi Perguruan Tinggi <span
+                                    class="required-label">*</span></label>
+                            <select class="form-select" aria-label="Default select example" name="akrediktasi">
+                                <option selected hidden></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">D</option>
+                            </select>
+                        </div>
+                        <!-- end akrediktasi -->
+                        <div class="mb-3">
+                            <label for="semester" class="form-label">Semester ke <span
+                                    class="required-label">*</span></label>
+                            <select class="form-select" aria-label="Default select example" name="semester">
+                                <option selected hidden></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                            </select>
+                        </div>
+                        <!-- end semester -->
+                        <div class="mb-3">
+                            <label for="alamat_pt" class="form-label">Alamat Perguruan Tinggi <span
+                                    class="required-label">*</span></label>
+                            <textarea class="form-control rounded-3" name="alamat_pt" id="alamat_pt"
+                                rows="2"></textarea>
+                        </div>
+                        <!-- end alamat PT -->
+                    </div>
+                </div>
+                <!-- end identitas diri -->
+                <h3 class="mb20">B. Kondisi Keluarga</h3>
+                <div class="row mb40">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="nama_ayah" class="form-label">Nama Ayah <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="nama_ayah" placeholder="">
+                        </div>
+                        <!-- end nama ayah -->
+                        <div class="mb-3">
+                            <label for="usia" class="form-label">Usia<span class="required-label">*</span></label>
+                            <input type="number" maxlength="10" class="form-control" id="usia" placeholder="">
+                        </div>
+                        <!-- end usia -->
+                        <div class="mb-3">
+                            <label for="pekerjaan_ayah" class="form-label">Pekerjaan Ayah <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="pekerjaan_ayah" placeholder="">
+                        </div>
+                        <!-- end pekerjaan ayah -->
+                        <div class="mb-3">
+                            <label for="pendidikan_terakhir_ayah" class="form-label">Pendidikan Terakhir Ayah <span
+                                    class="required-label">*</span></label>
+                            <select class="form-select" aria-label="Default select example"
+                                name="pendidikan_terakhir_ayah">
+                                <option selected hidden></option>
+                                <option value="sd">SD</option>
+                                <option value="smp">SMP</option>
+                                <option value="sma">SMA</option>
+                                <option value="d1">D1</option>
+                                <option value="d3">D3</option>
+                                <option value="s1">S1</option>
+                                <option value="s2">S2</option>
+                                <option value="s3">S3</option>
+                            </select>
+                        </div>
+                        <!-- end Pendidikan Terakhir Ayah -->
+                        <div class="mb-3">
+                            <label for="penghasilan_ayah" class="form-label">Penghasilan per Bulan Ayah <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="penghasilan_ayah" placeholder="">
+                        </div>
+                        <!-- end Pneghasilan ayah -->
+                        <div class="mb-3">
+                            <label for="alamat_ayah" class="form-label">Alamat Ayah <span
+                                    class="required-label">*</span></label>
+                            <textarea class="form-control rounded-3" name="alamat_ayah" id="alamat_ayah"
+                                rows="5"></textarea>
+                        </div>
+                        <!-- end alamat -->
+                    </div>
+                    <!-- Ayah -->
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="nama_ibu" class="form-label">Nama Ibu <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="nama_ibu" placeholder="">
+                        </div>
+                        <!-- end nama Ibu -->
+                        <div class="mb-3">
+                            <label for="usia" class="form-label">Usia <span class="required-label">*</span></label>
+                            <input type="number" maxlength="10" class="form-control" id="usia" placeholder="">
+                        </div>
+                        <!-- end usia -->
+                        <div class="mb-3">
+                            <label for="pekerjaan_ibu" class="form-label">Pekerjaan Ibu <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="pekerjaan_ibu" placeholder="">
+                        </div>
+                        <!-- end pekerjaan Ibu -->
+                        <div class="mb-3">
+                            <label for="pendidikan_terakhir_ibu" class="form-label">Pendidikan Terakhir Ibu <span
+                                    class="required-label">*</span></label>
+                            <select class="form-select" aria-label="Default select example"
+                                name="pendidikan_terakhir_ibu">
+                                <option selected hidden></option>
+                                <option value="sd">SD</option>
+                                <option value="smp">SMP</option>
+                                <option value="sma">SMA</option>
+                                <option value="d1">D1</option>
+                                <option value="d3">D3</option>
+                                <option value="s1">S1</option>
+                                <option value="s2">S2</option>
+                                <option value="s3">S3</option>
+                            </select>
+                        </div>
+                        <!-- end Pendidikan Terakhir Ibu -->
+                        <div class="mb-3">
+                            <label for="penghasilan_ibu" class="form-label">Penghasilan per Bulan Ibu <span
+                                    class="required-label">*</span></label>
+                            <input type="text" class="form-control" id="penghasilan_ibu" placeholder="">
+                        </div>
+                        <!-- end Pneghasilan Ibu -->
+                        <div class="mb-3">
+                            <label for="alamat_ibu" class="form-label">Alamat Ibu <span
+                                    class="required-label">*</span></label>
+                            <textarea class="form-control rounded-3" name="alamat_ibu" id="alamat_ibu"
+                                rows="5"></textarea>
+                        </div>
+                        <!-- end alamat -->
+                    </div>
+                    <!-- end Ibu -->
+                </div>
+                <!-- end kondisi keluarga -->
+                <h3 class="mb20">C. Lampiran Dokumen</h3>
+                <div class="row pb40">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="scan_ktp" class="form-label">Scan Kartu Tanda Penduduk (KTP) <span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" name="scan_ktp" type="file" accept="pdf/*" id="formFile">
+                        </div>
+                        <!-- end scan KTP -->
+                        <div class="mb-3">
+                            <label for="scan_ipk" class="form-label">Scan IPK Terakhir<span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" name="scan_ipk" type="file" name="scan_ipk" accept="pdf/*"
+                                id="formFile">
+                        </div>
+                        <!-- end scan_ipk -->
+                        <div class="mb-3">
+                            <label for="scan_prestasi" class="form-label">Scan Prestasi <span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .rar</span></label>
+                            <p class="biru mb-3">Prestasi antara lain : prestasi akademik, non akademik, paskibra,
+                                peserta
+                                lomba individu
+                                peserta lomba kelompok, surat keterangan hafiz
+                                <span class="bold">
+                                    (Dapat mengupload lebih dari satu prestasi kemudian dimasukkan dalam rar)
+                                </span>
+                            </p>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <!-- end prestasi -->
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                        <div class="mb-3">
+                            <label for="scan_sertif_inggris" class="form-label">Scan Sertifikat Bahasa Inggris<span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <input class="form-control" type="file" name="scan_sertif_inggris" accept="pdf/*"
+                                id="formFile">
+                        </div>
+                        <!-- end scan sertif_inggris -->
+                        <div class="mb-3">
+                            <label for="scan_ktp" class="form-label">Scan Surat Keterangan Tidak Mampu <span
+                                    class="required-label">*</span> <span class="text-red fs12">Format file
+                                    .pdf</span></label>
+                            <p class="biru mb-3">RTSM/RTM, PKH, KIP, Surat desa yatim/piatu
+                            </p>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <!-- end prestasi -->
+                    </div>
+                </div>
+                <!-- end lampiran dokumen -->
+                <div class="norek visually-hidden">
+                    <h3 class="mb20">D. Nomer Rekening</h3>
+                    <div class="row mb40">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="nomer_rekening" class="form-label">Masukkan Nomer Rekening <span
+                                        class="required-label">*</span></label>
+                                <input type="text" class="form-control" id="nomer_rekening" placeholder="">
+                            </div>
+                        </div>
+                        <!-- end nomer rekening -->
+                    </div>
+                </div>
+                <div class="row pb40 ">
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary fs18">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="bg-biru pt20 pb20">
+        <div class="tengah">
+            <p class="bold">
+                ©2022. Dinas Pendidikan dan
+                Kebudayaan Kabupaten Batang. All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- LOGOUT  Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Anda yakin akan keluar?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Pilih "Logout" dibawah jika anda ingin mengakhiri sesimu sekarang.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <a href="<?= base_url(); ?>/logout" class="btn btn-danger">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Custom Js -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
