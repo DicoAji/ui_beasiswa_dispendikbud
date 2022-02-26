@@ -60,7 +60,7 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"
@@ -149,7 +149,7 @@
       </div>
     </nav>
 
-    <div class="bg-abu pt100 pb50">
+    <div class="bg-abu p40">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-12">
@@ -203,76 +203,96 @@
                   />
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
+              <div class="arrow justify-content-end d-flex mt15">
                 <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
+                  class="carousel-control me-2"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon-hidden"
+                    aria-hidden="true"
+                    ><i class="bi bi-arrow-left-circle-fill"></i
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </span>
+
                 <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                  class="carousel-control"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon-hidden"
+                    aria-hidden="true"
+                    ><i class="bi bi-arrow-right-circle-fill"></i
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-12 border">
-            <h3 class="mt15">Informasi terbaru</h3>
-            <div class="border-bottom p-1 mt15">
-              <div class="row">
-                <div class="col-4">
-                  <img src="assets/img/nadim.png" alt="" />
-                </div>
-                <div class="col-8">
-                  <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                    Dignissim.
-                  </p>
-                  <a href="">Selengkapnya</a>
-                </div>
-              </div>
-            </div>
-            <div class="border-bottom p-2 mt15">
-              <div class="row">
-                <div class="col-4">
-                  <img src="assets/img/nadim.png" alt="" />
-                </div>
-                <div class="col-8">
-                  <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                    Dignissim.
-                  </p>
-                  <a href="">Selengkapnya</a>
+
+          <div
+            class="col-lg-4 col-12"
+            data-bs-spy="scroll"
+            data-bs-offset="0"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            <div class="border px-3">
+              <h3 class="mt15">Informasi terbaru</h3>
+              <div class="border-bottom p-1 mt15">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/nadim.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p class="bold">
+                      Nadiem Makarim Keluarkan Permendikbud Baru
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                      Dignissim.
+                    </p>
+                    <a href="">Selengkapnya</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="border-bottom p-2 mt15">
-              <div class="row">
-                <div class="col-4">
-                  <img src="assets/img/nadim.png" alt="" />
+              <div class="border-bottom p-2 mt15">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/nadim.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p class="bold">
+                      Nadiem Makarim Keluarkan Permendikbud Baru
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                      Dignissim.
+                    </p>
+                    <a href="">Selengkapnya</a>
+                  </div>
                 </div>
-                <div class="col-8">
-                  <p class="bold">Nadiem Makarim Keluarkan Permendikbud Baru</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                    Dignissim.
-                  </p>
-                  <a href="">Selengkapnya</a>
+              </div>
+              <div class="border-bottom p-2 mt15">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/nadim.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <p class="bold">
+                      Nadiem Makarim Keluarkan Permendikbud Baru
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                      Dignissim.
+                    </p>
+                    <a href="">Selengkapnya</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -285,8 +305,10 @@
       <div class="tengah">
         <h2>Kuota dan Alokasi</h2>
       </div>
-      <div class="row mt50 justify-content-center">
-        <div class="col-md-4 mb-2 mb-md-0 col-sm-5 col-12">
+      <div class="row pt60 justify-content-center">
+        <div
+          class="col-md-4 mb-2 mb-md-0 col-sm-5 col-12 mb-lg-0 mb-md-0 mb-sm-4"
+        >
           <div class="tengah">
             <img src="assets/img/Vector.png" alt="" />
           </div>
@@ -297,7 +319,9 @@
             <p><span id="jumlahpesertadidik">200</span> orang</p>
           </div>
         </div>
-        <div class="col-md-4 mb-2 mb-md-0 col-sm-5 col-12">
+        <div
+          class="col-md-4 mb-2 mb-md-0 col-sm-5 col-12 mb-lg-0 mb-md-0 mb-sm-2"
+        >
           <div class="tengah">
             <img src="assets/img/Vector.png" alt="" />
           </div>
@@ -326,51 +350,47 @@
       <div class="container">
         <h2 class="text-center">Jalur Beasiswa</h2>
         <div class="row mt40 justify-content-center">
-          <div class="col-lg-4 mb-2 mb-lg-0 col-md-6 col-12">
-            <div class="p-4 bg-white border">
-              <div class="tengah">
-                <img src="assets/img/tut wuri handayani.png" alt="" />
-              </div>
-              <div class="tengah mt50">
-                <div class="d-block">
-                  <h4 class="tengah">Peserta Didik</h4>
-                  <p class="text-center">
-                    Beasiswa bagi peserta didik SMA/SMK/MA sederajat
-                  </p>
-                  <a class="btn btn-primary d-block mt25" href="">Daftar</a>
-                </div>
+          <div
+            class="col-lg-4 mb-2 mb-lg-0 col-md-6 col-12 border gx-1 p-4 bg-white"
+          >
+            <div class="tengah">
+              <img src="assets/img/tut wuri handayani.png" alt="" />
+            </div>
+            <div class="tengah mt50">
+              <div class="d-block">
+                <h4 class="tengah">Peserta Didik</h4>
+                <p class="text-center">
+                  Beasiswa bagi peserta didik SMA/SMK/MA sederajat
+                </p>
+                <a class="btn btn-primary d-block mt25" href="">Daftar</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4 bg-white border">
-              <div class="tengah">
-                <img src="assets/img/tut wuri handayani.png" alt="" />
-              </div>
-              <div class="tengah mt50">
-                <div class="d-block">
-                  <h4 class="tengah">Calon Mahasiswa</h4>
-                  <p class="text-center">
-                    Beasiswa bagi Calon Mahasiswa lulusan SMA/SMK/MA dari daerah
-                  </p>
-                  <a class="btn btn-primary d-block mt25" href="">Daftar</a>
-                </div>
+          <div class="col-lg-4 col-md-6 col-12 border border p-4 bg-white">
+            <div class="tengah">
+              <img src="assets/img/tut wuri handayani.png" alt="" />
+            </div>
+            <div class="tengah mt50">
+              <div class="d-block">
+                <h4 class="tengah">Calon Mahasiswa</h4>
+                <p class="text-center">
+                  Beasiswa bagi Calon Mahasiswa lulusan SMA/SMK/MA dari daerah
+                </p>
+                <a class="btn btn-primary d-block mt25" href="">Daftar</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4 bg-white border">
-              <div class="tengah">
-                <img src="assets/img/tut wuri handayani.png" alt="" />
-              </div>
-              <div class="tengah mt50">
-                <div class="d-block">
-                  <h4 class="tengah">Mahasiswa</h4>
-                  <p class="text-center">
-                    Beasiswa bagi Mahasiswa dari Kabupaten Batang
-                  </p>
-                  <a class="btn btn-primary d-block mt25" href="">Daftar</a>
-                </div>
+          <div class="col-lg-4 col-md-6 col-12 p-4 bg-white border">
+            <div class="tengah">
+              <img src="assets/img/tut wuri handayani.png" alt="" />
+            </div>
+            <div class="tengah mt50">
+              <div class="d-block">
+                <h4 class="tengah">Mahasiswa</h4>
+                <p class="text-center">
+                  Beasiswa bagi Mahasiswa dari Kabupaten Batang
+                </p>
+                <a class="btn btn-primary d-block mt25" href="">Daftar</a>
               </div>
             </div>
           </div>

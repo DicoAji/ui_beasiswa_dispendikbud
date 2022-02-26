@@ -15,19 +15,23 @@ html {
 h2 {
   font-size: 36px !important ;
   font-weight: 700;
+  margin: 0 !important;
 }
 h3 {
   font-size: 24px !important;
   font-weight: 700;
+  margin: 0 !important;
 }
 h4 {
   font-size: 18px !important;
   font-weight: 700;
+  margin: 0 !important;
 }
 
 h5 {
   font-size: 15px !important;
   font-weight: 700;
+  margin: 0 !important;
 }
 
 p {
@@ -44,6 +48,7 @@ p {
 .mb100 {
   margin-bottom: 100px;
 }
+
 .mt50 {
   margin-top: 50px;
 }
@@ -89,15 +94,26 @@ p {
 .pb100 {
   padding-bottom: 100px;
 }
+.pt60 {
+  padding-top: 60px;
+}
 .pt50 {
   padding-top: 50px;
 }
 .pb40 {
   padding-bottom: 40px;
 }
+.p40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .p50 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.p25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .pt20 {
   padding-top: 20px;
@@ -152,7 +168,9 @@ p {
 /*               NAVBAR                      */
 /*********************************************/
 #navbar {
-  position: fixed;
+  position: sticky;
+
+  /* position: fixed; */
   z-index: 1;
   /* Make it stick/fixed */
   top: 0;
@@ -176,7 +194,7 @@ p {
 .navbarNav:hover {
   color: #297bbf !important;
   background-color: white !important;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   transition: color 0.4s, background-color 0.4s, border-radius 0.4s;
 }
 
@@ -193,6 +211,9 @@ p {
 }
 /* background img */
 
+.btn {
+  border-radius: 0 !important;
+}
 .topi {
   background-image: url("../img/topi.png");
   background-size: contain;
@@ -234,6 +255,13 @@ label {
   display: block;
 }
 
+.arrow i {
+  font-size: 40px;
+}
+.carousel-indicators {
+  display: none;
+}
+
 /************************************/
 /*            INFORMASI             */
 /************************************/
@@ -265,4 +293,88 @@ label {
 
 /*=============== phone view ===============*/
 @media (max-width: 576px) {
+  nav .logo h4 {
+    display: none !important;
+  }
+  .kotaklogin {
+    width: 100%;
+  }
+}
+
+/* min */
+@media (min-width: 577px) {
+  .kotaklogin {
+    width: 600px;
+  }
+}
+
+/********* ADMIN ***********/
+/* pakai */
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  /* margin-left: -15rem; */
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 252px;
+}
+@media (min-width: 375px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  .wraper nav {
+    width: 900px !important;
+  }
+}
+.menu:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+.menu:hover a {
+  color: #bfbfbf;
+}
+.menu a {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+.menu a i {
+  margin-right: 5px;
+}
+.menu .dropdown ul li a {
+  color: black !important;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.nav-admin,
+.sidebar-heading {
+  height: 86px;
+}
+
+.border-b {
+  border-bottom: 4px solid white;
+}
+.border-s {
+  border-left: 4px solid white;
 }
