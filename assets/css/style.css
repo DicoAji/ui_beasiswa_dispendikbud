@@ -164,6 +164,15 @@ p {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
   border: none;
 }
+.required-label {
+  color: red;
+}
+.fs12{
+  font-size: 12px;
+}
+.fs18{
+  font-size: 18px;
+}
 /*********************************************/
 /*               NAVBAR                      */
 /*********************************************/
