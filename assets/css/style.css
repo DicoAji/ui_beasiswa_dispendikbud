@@ -115,6 +115,10 @@ p {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.p20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .pt20 {
   padding-top: 20px;
 }
@@ -167,10 +171,10 @@ p {
 .required-label {
   color: red;
 }
-.fs12{
+.fs12 {
   font-size: 12px;
 }
-.fs18{
+.fs18 {
   font-size: 18px;
 }
 /*********************************************/
@@ -249,11 +253,13 @@ p {
   height: 400px;
 }
 input,
-textarea {
+textarea,
+select {
   outline: none;
   border: none;
   padding: 5px 10px;
   margin-top: 5px;
+  border-radius: 0 !important;
 }
 label {
   display: block;
@@ -356,7 +362,6 @@ label {
 }
 .menu:hover {
   background-color: white;
-  border-radius: 10px;
 }
 .menu:hover a {
   color: #bfbfbf;
@@ -378,7 +383,7 @@ label {
 
 .nav-admin,
 .sidebar-heading {
-  height: 86px;
+  height: 84px;
 }
 
 .border-b {
