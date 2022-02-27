@@ -314,6 +314,12 @@ label {
   .kotaklogin {
     width: 100%;
   }
+  .logo-admin {
+    display: none !important;
+  }
+  .penerima-dashboard {
+    display: none;
+  }
 }
 
 /* min */
@@ -364,7 +370,7 @@ label {
   background-color: white;
 }
 .menu:hover a {
-  color: #bfbfbf;
+  color: #000000;
 }
 .menu a {
   color: white;
@@ -391,4 +397,7 @@ label {
 }
 .border-s {
   border-left: 4px solid white;
+}
+.admin-content {
+  width: 90%;
 }
