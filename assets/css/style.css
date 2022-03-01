@@ -10,7 +10,7 @@ html {
 :root {
   --biru: #297bbf;
   --abu: #f6f6f6;
-  --abu2: #ACACC0;
+  --abu2: #acacc0;
 }
 
 h2 {
@@ -79,6 +79,10 @@ p {
 }
 .mb15 {
   margin-bottom: 15px;
+}
+.m20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .p100 {
@@ -165,8 +169,8 @@ p {
 .text-red {
   color: #dc3545;
 }
-.text-abu{
-  color: #ACACC0;
+.text-abu {
+  color: #acacc0;
 }
 .card {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
@@ -182,7 +186,7 @@ p {
   font-size: 18px;
 }
 /* Datatables */
-tr{
+tr {
   border-color: var(--abu2);
 }
 
@@ -290,7 +294,6 @@ label {
   display: none;
 }
 
-
 /************************************/
 /*            INFORMASI             */
 /************************************/
@@ -312,7 +315,7 @@ label {
 /*            INDEX                 */
 /************************************/
 @media (min-width: 992px) {
-  .jalur_beasiswa .col-lg-4{
+  .jalur_beasiswa .col-lg-4 {
     width: 30% !important;
   }
 }
@@ -431,4 +434,16 @@ label {
 }
 .admin-content {
   width: 90%;
+}
+
+.detail tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none;
+}
+.detail table > :not(caption) > * > * {
+  padding: 3px;
 }
