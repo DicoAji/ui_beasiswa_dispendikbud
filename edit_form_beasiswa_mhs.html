@@ -99,17 +99,15 @@
                 <h2 class="mb40">Form Pendaftaran Beasiswa bagi Mahasiswa</h2>
                 <!-- Btn Ubah data -->
                 <h3 class="mb20">A. Identitas Diri</h3>
-                <div class="row mb40">
+                <div class="row mt20 mb40">
                     <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                            <label for="nama_lengkap" class="form-label">Nama Lengkap <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="nama_lengkap" placeholder="">
+                        <div class="mb20">
+                            <label for="nama_lengkap" class="form-label">Nama Lengkap </label>
+                            <input type="text" class="form-control" id="nama_lengkap" placeholder="" />
                         </div>
                         <!-- end nama lengkap -->
-                        <div class="mb-3">
-                            <label for="jenis_kelamin" class="form-label">Jenis Kelamin <span
-                                    class="required-label">*</span></label>
+                        <div class="mb20">
+                            <label for="jenis_kelamin" class="form-label">Jenis Kelamin </label>
                             <select class="form-select" aria-label="Default select example" name="jenis_kelamin">
                                 <option selected hidden></option>
                                 <option value="laki">Laki-laki</option>
@@ -117,47 +115,57 @@
                             </select>
                         </div>
                         <!-- end jenis kelamin -->
-                        <div class="mb-3">
-                            <label for="nim" class="form-label">NIM / NISN <span class="required-label">*</span></label>
-                            <input type="text" maxlength="10" class="form-control" id="nim" placeholder="">
+                        <div class="mb20">
+                            <label for="nim" class="form-label">NIM</label>
+                            <input type="text" maxlength="10" class="form-control" id="nim" placeholder="" />
                         </div>
                         <!-- end NIM -->
-                        <div class="mb-3">
-                            <label for="ttl" class="form-label">Tempat, Tanggal Lahir <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="ttl" placeholder="">
+                        <div class="mb20">
+                            <label for="ttl" class="form-label">Tempat, Tanggal Lahir
+                            </label>
+                            <input type="text" class="form-control" id="ttl" placeholder="" />
                         </div>
                         <!-- end Tempat, Tanggal Lahir -->
-                        <div class="mb-3">
-                            <label for="anak_ke" class="form-label">Anak Ke <span
-                                    class="required-label">*</span></label>
-                            <input type="number" class="form-control" id="anak_ke" placeholder="">
+                        <div class="mb20">
+                            <label for="agama" class="form-label">Agama </label>
+                            <select class="form-select" aria-label="Default select example" name="agama">
+                                <option selected hidden></option>
+                                <option value="islam">islam</option>
+                                <option value="kristen">kristen</option>
+                                <option value="hindu">hindu</option>
+                                <option value="budha">budha</option>
+                                <option value="konghucu">konghucu</option>
+                            </select>
                         </div>
-                        <!-- end anak ke -->
-                        <div class="mb-3">
-                            <label for="no_telepon" class="form-label">Nomer Telepon <span
-                                    class="required-label">*</span></label>
-                            <input type="number" class="form-control" id="no_telepon" placeholder="">
+                        <!-- end agama -->
+                        <div class="mb20">
+                            <label for="no_telepon" class="form-label">Nomer Telepon </label>
+                            <input type="number" class="form-control" id="no_telepon" placeholder="" />
                         </div>
                         <!-- end Nomer Telepon -->
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                            <label for="alamat_rumah" class="form-label">Alamat Rumah <span
-                                    class="required-label">*</span></label>
-                            <textarea class="form-control rounded-3" name="alamat_rumah" id="alamat_rumah"
-                                rows="4"></textarea>
-                        </div>
-                        <!-- end alamat -->
-                        <div class="mb-3">
-                            <label for="nama_pt" class="form-label">Nama Perguruan Tinggi <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="nama_pt" placeholder="">
+                        <div class="mb20">
+                            <label for="nama_pt" class="form-label">Nama Perguruan Tinggi
+                            </label>
+                            <input type="text" class="form-control" id="nama_pt" placeholder="" />
                         </div>
                         <!-- end nama_pt -->
-                        <div class="mb-3">
-                            <label for="akrediktasi" class="form-label">Akrediktasi Perguruan Tinggi <span
-                                    class="required-label">*</span></label>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb20">
+                            <label for="alamat_rumah" class="form-label">Alamat Rumah </label>
+                            <textarea class="form-control mb-3" name="alamat_rumah" id="alamat_rumah"
+                                rows="5"></textarea>
+                            <label for="kecamatan" class="form-label">Kecamatan </label>
+                            <select class="form-select" aria-label="Default select example" name="kecamatan">
+                                <option value="" selected>Batang</option>
+                                <option value="">Tulis</option>
+                                <option value="">Limpung</option>
+                            </select>
+                        </div>
+                        <!-- end alamat -->
+                        <div class="mb20">
+                            <label for="akrediktasi" class="form-label">Akrediktasi Perguruan Tinggi
+                            </label>
                             <select class="form-select" aria-label="Default select example" name="akrediktasi">
                                 <option selected hidden></option>
                                 <option value="A">A</option>
@@ -166,10 +174,15 @@
                             </select>
                         </div>
                         <!-- end akrediktasi -->
-                        <div class="mb-3">
-                            <label for="semester" class="form-label">Semester ke <span
-                                    class="required-label">*</span></label>
-                            <select class="form-select" aria-label="Default select example" name="semester">
+                        <div class="mb20">
+                            <label for="tahun_masuk_pt" class="form-label">Tahun Masuk Perguruan Tinggi
+                            </label>
+                            <input type="text" class="form-control" id="tahun_masuk_pt" placeholder="" />
+                        </div>
+                        <!-- end tahun_masuk_pt -->
+                        <div class="mb20">
+                            <label for="semester_pt" class="form-label">Semester ke </label>
+                            <select class="form-select" aria-label="Default select example" name="semester_pt">
                                 <option selected hidden></option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -187,12 +200,11 @@
                                 <option value="14">14</option>
                             </select>
                         </div>
-                        <!-- end semester -->
-                        <div class="mb-3">
-                            <label for="alamat_pt" class="form-label">Alamat Perguruan Tinggi <span
-                                    class="required-label">*</span></label>
-                            <textarea class="form-control rounded-3" name="alamat_pt" id="alamat_pt"
-                                rows="2"></textarea>
+                        <!-- end semester_pt -->
+                        <div class="mb20">
+                            <label for="alamat_pt" class="form-label">Alamat Perguruan Tinggi
+                            </label>
+                            <textarea class="form-control" name="alamat_pt" id="alamat_pt" rows="1"></textarea>
                         </div>
                         <!-- end alamat PT -->
                     </div>
@@ -201,21 +213,25 @@
                 <h3 class="mb20">B. Kondisi Keluarga</h3>
                 <div class="row mb40">
                     <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                            <label for="nama_ayah" class="form-label">Nama Ayah <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="nama_ayah" placeholder="">
+                        <div class="mb20">
+                            <label for="nama_ayah" class="form-label">Nama Ayah / Wali </label>
+                            <input type="text" class="form-control" id="nama_ayah" placeholder="" />
                         </div>
                         <!-- end nama ayah -->
-                        <div class="mb-3">
-                            <label for="pekerjaan_ayah" class="form-label">Pekerjaan Ayah <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="pekerjaan_ayah" placeholder="">
+                        <div class="mb20">
+                            <label for="usia" class="form-label">Usia Ayah / Wali</label>
+                            <input type="number" maxlength="10" class="form-control" id="usia" placeholder="" />
+                        </div>
+                        <!-- end usia -->
+                        <div class="mb20">
+                            <label for="pekerjaan_ayah" class="form-label">Pekerjaan Ayah / Wali
+                            </label>
+                            <input type="text" class="form-control" id="pekerjaan_ayah" placeholder="" />
                         </div>
                         <!-- end pekerjaan ayah -->
-                        <div class="mb-3">
-                            <label for="pendidikan_terakhir_ayah" class="form-label">Pendidikan Terakhir Ayah <span
-                                    class="required-label">*</span></label>
+                        <div class="mb20">
+                            <label for="pendidikan_terakhir_ayah" class="form-label">Pendidikan Terakhir Ayah / Wali
+                            </label>
                             <select class="form-select" aria-label="Default select example"
                                 name="pendidikan_terakhir_ayah">
                                 <option selected hidden></option>
@@ -229,44 +245,41 @@
                                 <option value="s3">S3</option>
                             </select>
                         </div>
-                        <!-- end Pendidikan Terakhir Ayah -->
-                        <div class="mb-3">
-                            <label for="usia" class="form-label">Usia Ayah / Wali<span
-                                    class="required-label">*</span></label>
-                            <input type="number" maxlength="10" class="form-control" id="usia" placeholder="">
-                        </div>
-                        <!-- end usia -->
-                        <div class="mb-3">
-                            <label for="penghasilan_ayah" class="form-label">Penghasilan per Bulan Ayah <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="penghasilan_ayah" placeholder="">
+                        <!-- end Pendidikan Terakhir Ayah / Wali -->
+                        <div class="mb20">
+                            <label for="penghasilan_ayah" class="form-label">Penghasilan per Bulan Ayah / Wali
+                            </label>
+                            <input type="text" class="form-control" id="penghasilan_ayah" placeholder="" />
                         </div>
                         <!-- end Pneghasilan ayah -->
-                        <div class="mb-3">
-                            <label for="alamat_ayah" class="form-label">Alamat Ayah <span
-                                    class="required-label">*</span></label>
-                            <textarea class="form-control rounded-3" name="alamat_ayah" id="alamat_ayah"
-                                rows="5"></textarea>
+                        <div class="mb20">
+                            <label for="alamat_ayah" class="form-label">Alamat Ayah / Wali
+                            </label>
+                            <textarea class="form-control" name="alamat_ayah" id="alamat_ayah" rows="5"></textarea>
                         </div>
                         <!-- end alamat -->
                     </div>
-                    <!-- Ayah -->
+                    <!-- Ayah / Wali -->
                     <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                            <label for="nama_ibu" class="form-label">Nama Ibu <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="nama_ibu" placeholder="">
+                        <div class="mb20">
+                            <label for="nama_ibu" class="form-label">Nama Ibu / Wali </label>
+                            <input type="text" class="form-control" id="nama_ibu" placeholder="" />
                         </div>
-                        <!-- end nama Ibu -->
-                        <div class="mb-3">
-                            <label for="pekerjaan_ibu" class="form-label">Pekerjaan Ibu <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="pekerjaan_ibu" placeholder="">
+                        <!-- end nama Ibu / Wali -->
+                        <div class="mb20">
+                            <label for="usia" class="form-label">Usia Ibu / Wali </label>
+                            <input type="number" maxlength="10" class="form-control" id="usia" placeholder="" />
                         </div>
-                        <!-- end pekerjaan Ibu -->
-                        <div class="mb-3">
-                            <label for="pendidikan_terakhir_ibu" class="form-label">Pendidikan Terakhir Ibu <span
-                                    class="required-label">*</span></label>
+                        <!-- end usia -->
+                        <div class="mb20">
+                            <label for="pekerjaan_ibu" class="form-label">Pekerjaan Ibu / Wali
+                            </label>
+                            <input type="text" class="form-control" id="pekerjaan_ibu" placeholder="" />
+                        </div>
+                        <!-- end pekerjaan Ibu / Wali -->
+                        <div class="mb20">
+                            <label for="pendidikan_terakhir_ibu" class="form-label">Pendidikan Terakhir Ibu / Wali
+                            </label>
                             <select class="form-select" aria-label="Default select example"
                                 name="pendidikan_terakhir_ibu">
                                 <option selected hidden></option>
@@ -280,114 +293,103 @@
                                 <option value="s3">S3</option>
                             </select>
                         </div>
-                        <!-- end Pendidikan Terakhir Ibu -->
-                        <div class="mb-3">
-                            <label for="usia" class="form-label">Usia Ibu / Wali <span
-                                    class="required-label">*</span></label>
-                            <input type="number" maxlength="10" class="form-control" id="usia" placeholder="">
+                        <!-- end Pendidikan Terakhir Ibu / Wali -->
+                        <div class="mb20">
+                            <label for="penghasilan_ibu" class="form-label">Penghasilan per Bulan Ibu / Wali
+                            </label>
+                            <input type="text" class="form-control" id="penghasilan_ibu" placeholder="" />
                         </div>
-                        <!-- end usia -->
-                        <div class="mb-3">
-                            <label for="penghasilan_ibu" class="form-label">Penghasilan per Bulan Ibu <span
-                                    class="required-label">*</span></label>
-                            <input type="text" class="form-control" id="penghasilan_ibu" placeholder="">
-                        </div>
-                        <!-- end Pneghasilan Ibu -->
-                        <div class="mb-3">
-                            <label for="alamat_ibu" class="form-label">Alamat Ibu <span
-                                    class="required-label">*</span></label>
-                            <textarea class="form-control rounded-3" name="alamat_ibu" id="alamat_ibu"
-                                rows="5"></textarea>
+                        <!-- end Pneghasilan Ibu / Wali -->
+                        <div class="mb20">
+                            <label for="alamat_ibu" class="form-label">Alamat Ibu / Wali
+                            </label>
+                            <textarea class="form-control" name="alamat_ibu" id="alamat_ibu" rows="5"></textarea>
                         </div>
                         <!-- end alamat -->
                     </div>
-                    <!-- end Ibu -->
+                    <!-- end Ibu / Wali -->
                 </div>
                 <!-- end kondisi keluarga -->
                 <h3 class="mb20">C. Lampiran Dokumen</h3>
+                <p class="bold p20" style="color: red">
+                    *Semua file di upload dengan format .pdf
+                </p>
                 <div class="row pb40">
                     <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                            <label for="scan_kk" class="form-label">Scan Kartu Keluarga (KK) <span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" name="scan_kk" type="file" accept="pdf/*" id="formFile">
+                        <div class="mb20">
+                            <label for="scan_kk" class="form-label">Scan Kartu Keluarga (KK)
+
+                            </label>
+                            <input class="form-control" name="scan_kk" type="file" accept=".pdf" id="formFile" />
                         </div>
                         <!-- end scan KK -->
-                        <div class="mb-3">
-                            <label for="scan_ktp" class="form-label">Scan Kartu Tanda Penduduk (KTP) <span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" name="scan_ktp" type="file" accept="pdf/*" id="formFile">
+                        <div class="mb20">
+                            <label for="scan_ktp" class="form-label">Scan Kartu Tanda Penduduk (KTP)
+
+                            </label>
+                            <input class="form-control" name="scan_ktp" type="file" accept=".pdf" id="formFile" />
                         </div>
                         <!-- end scan KTP -->
-                        <div class="mb-3">
-                            <label for="scan_ktm" class="form-label">Scan Kartu Tanda Mahasiswa (KTM) <span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" name="scan_ktm" type="file" accept="pdf/*" id="formFile">
+                        <div class="mb20">
+                            <label for="scan_ktm" class="form-label">Scan Kartu Tanda Mahasiswa (KTM)
+
+                            </label>
+                            <input class="form-control" name="scan_ktm" type="file" accept=".pdf" id="formFile" />
                         </div>
                         <!-- end scan KTM -->
-                        <div class="mb-3">
-                            <label for="scan_akreditasi_pt" class="form-label">Scan Surat Akreditasi Perguruan Tinggi
-                                <span class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" name="scan_akreditasi_pt" type="file" accept="pdf/*"
-                                id="formFile">
-                        </div>
-                        <!-- end scan_akreditasi_pt -->
-                        <div class="mb-3">
-                            <label for="scan_proposal" class="form-label">Scan Proposal Bantuan <span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" name="scan_proposal" type="file" accept="pdf/*" id="formFile">
-                        </div>
-                        <!-- end scan_proposal -->
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                            <label for="scan_prestasi" class="form-label">Scan Prestasi <span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .rar</span></label>
-                            <p class="biru mb-3">Prestasi antara lain : prestasi akademik, non akademik,
-                                peserta
-                                lomba perorangan,
-                                peserta lomba kelompok, surat keterangan tahfidz / lulus tahfidz Al Quran dengan minimal
-                                5 juz, nilai ujian sekolah, sertifikat bahasa inggris atau bahasa arab yang masih
-                                berlaku, Kartu Hasil Studi (KHS)
-                                <span class="bold">
-                                    (Jika prestasi lebih dari satu, scan prestasi harus dijadikan dalam satu pdf)
+                        <div class="mb20">
+                            <label for="scan_prestasi" class="form-label">Scan Prestasi <span class="text-abu">
+                                    (Dapat mengupload lebih dari satu prestasi)
                                 </span>
+                            </label>
+                            <p class="biru mb20">
+                                Prestasi antara lain : prestasi akademik, non akademik,
+                                peserta lomba perorangan, peserta lomba kelompok, surat
+                                keterangan tahfidz / lulus tahfidz Al Quran dengan minimal 5
+                                juz, nilai ujian sekolah, sertifikat bahasa inggris atau
+                                bahasa arab yang masih berlaku, Kartu Hasil Studi (KHS)
                             </p>
-                            <input class="form-control" name="scan_prestasi" type="file" id="formFile">
+                            <input class="form-control" name="scan_prestasi" type="file" id="formFile" />
                         </div>
                         <!-- end prestasi -->
-                        <!-- <div class="mb-3">
-                            <label for="scan_ujian_sekolah" class="form-label">Scan Nilai Ujian Sekolah<span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" type="file" name="scan_ujian_sekolah" accept="pdf/*"
-                                id="formFile">
-                        </div> -->
-                        <!-- end scan_ujian_sekolah -->
-                        <!-- <div class="mb-3">
-                            <label for="scan_sertif_inggris" class="form-label">Scan Sertifikat Bahasa Inggris atau
-                                Bahasa Arab <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <input class="form-control" type="file" name="scan_sertif_inggris" accept="pdf/*"
-                                id="formFile">
-                        </div> -->
-                        <!-- end scan sertif_inggris -->
-                        <div class="mb-3">
-                            <label for="scan_sktm" class="form-label">Scan Surat Keterangan Tidak Mampu <span
-                                    class="required-label">*</span> <span class="text-red fs12">Format file
-                                    .pdf</span></label>
-                            <p class="biru mb-3">RTSM/RTM, PKH, KIP, Surat desa yatim/piatu
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb20">
+                            <label for="scan_akreditasi_pt" class="form-label">Scan Surat Akreditasi Perguruan Tinggi
+                            </label>
+                            <input class="form-control" name="scan_akreditasi_pt" type="file" accept=".pdf"
+                                id="formFile" />
+                        </div>
+                        <!-- end scan_akreditasi_pt -->
+                        <div class="mb20">
+                            <label for="scan_proposal" class="form-label">Scan Proposal Bantuan
+                            </label>
+                            <input class="form-control" name="scan_proposal" type="file" accept=".pdf" id="formFile" />
+                        </div>
+                        <!-- end scan_proposal -->
+                        <div class="mb20">
+                            <label for="foto_warna" class="form-label">Upload Foto Berwarna Ukuran 3x4
+                            </label>
+                            <input class="form-control" name="foto_warna" type="file" accept=".pdf" id="formFile" />
+                        </div>
+                        <!-- end foto_warna -->
+                        <div class="mb20">
+                            <label for="scan_bank" class="form-label">Scan Rekening Bank BPD Jateng
+                            </label>
+                            <input class="form-control" name="scan_bank" type="file" accept=".pdf" id="formFile" />
+                        </div>
+                        <!-- end scan bank -->
+                        <div class="mb20">
+                            <label for="scan_sktm" class="form-label">Scan Surat Keterangan Tidak Mampu
+
+                            </label>
+                            <p class="biru mb20">
+                                RTSM/RTM, PKH, KIP, Surat desa yatim/piatu
                             </p>
-                            <input class="form-control" name="scan_sktm" type="file" id="formFile">
+                            <input class="form-control" name="scan_sktm" type="file" id="formFile" />
                         </div>
                         <!-- end sktm -->
-
                     </div>
                 </div>
                 <!-- end lampiran dokumen -->
@@ -407,7 +409,7 @@
                 <div class="row pb40 ">
                     <div class="col-12 text-end">
                         <a href="form_beasiswa_mhs.html" class="btn btn-danger fs18 me-3">Batal</a>
-                        <button type="submit" class="btn btn-primary fs18">Kirim</button>
+                        <button type="submit" class="btn btn-primary fs18 px-4 py-2">Kirim</button>
                     </div>
                 </div>
             </form>
