@@ -1,369 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashbord</title>
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ICON -->
-    <script
-      src="https://kit.fontawesome.com/5fbcc24921.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashbord</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- ICON -->
+  <script src="https://kit.fontawesome.com/5fbcc24921.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 
-    <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="d-flex" id="wrapper">
-      <!-- Sidebar-->
-      <div class="bg-biru" sty id="sidebar-wrapper">
-        <div class="sidebar-heading bg-hitam tengah py-4 border-b">
-          <div class="username bold d-flex align-items-center">
-            <i class="bi bi-person-circle me-2" style="font-size: 35px"></i>
-            <h4 class="bold">ADMIN</h4>
-          </div>
-        </div>
-        <div class="list-group px-3 mt15">
-          <div class="p-2 menu ">
-            <a class="" href="index.html"
-              ><i class="bi bi-house-door-fill"></i> Dashbord</a
-            >
-          </div>
-          <div class="p-2 menu">
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="bi bi-card-text"></i>Data Pendaftaran
-              </a>
+  <link rel="stylesheet" href="../assets/css/style.css" />
 
-              <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="data_pendaftaran_siswa.html">SMA sederajat</a></li>
-                <li><a class="dropdown-item" href="data_pendaftaran_calon_mhs.html">Calon Mahasiswa</a></li>
-                <li>
-                  <a class="dropdown-item" href="data_pendaftaran_mahasiswa.html">Mahasiswa</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="p-2 menu">
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-              <i class="bi bi-check-circle-fill"></i></i>Daftar Penerima
-              </a>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">SMA Sederajat</a></li>
-                <li><a class="dropdown-item" href="#">Calon Mahasiswa</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Mahasiswa</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="p-2 menu">
-            <a class="" href="#"><i class="bi bi-door-open-fill"></i>Logout</a>
-          </div>
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="bg-biru" sty id="sidebar-wrapper">
+      <div class="sidebar-heading bg-hitam tengah py-4 border-b">
+        <div class="username bold d-flex align-items-center">
+          <i class="bi bi-person-circle me-2" style="font-size: 35px"></i>
+          <h4 class="bold">ADMIN</h4>
         </div>
       </div>
-      <!-- Page content wrapper-->
-      <div id="page-content-wrapper " class="wrap" style="width: 100%">
-        <!-- Top navigation-->
-        <nav
-          class="navbar nav-admin navbar-expand-lg border-bottom bg-biru p-2 py-3 border-s"
-          id="navbar"
-        >
-          <div class="container">
-              <i
-              class="bi bi-three-dots-vertical"
-              style="cursor: pointer; font-size: 20px"
-              id="sidebarToggle"
-            ></i>
-              <div class="logo-admin d-flex align-items-center mx-auto">
-                  <img class="me-3" src="../assets/img/logo-kabupaten-batang 2.png" alt="">
-                  <h4 class="d-flex align-items-center ms-2">
-                    Dinas Pendidikan dan Kebudayaan <br />
-                    Kabupaten Batang
-                  </h4>
-              </div>
-            
-          </div>
-        </nav>
-        <!-- Page content-->
-        <div class=" bg-abu " >
-          <div class="p40 admin-content mx-auto position-relative" >
-            <h3>Overview</h3>
-
-
-            <div class="row mt40 position-relative">
-              <div class="col-lg-8 col-12 ">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="p-4 bg-white">
-                      <div class="tengah flex-column">
-                        <h2 class="biru text-center">200</h2>
-                        <p class="biru text-center">Pendaftaran Beasiswa</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="p-4 bg-white">
-                      <div class="tengah flex-column">
-                        <h2 class="biru text-center">200</h2>
-                        <p class="biru text-center">Pendaftaran Beasiswa</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="p-4 bg-white">
-                      <div class="tengah flex-column">
-                        
-                        <h2 class="biru text-center">200</h2>
-                        <p class="biru text-center">Pendaftaran Beasiswa</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt40  gx-1">
-                  <h3>Data Beasiswa Peserta Didik</h3>
-                  <div class="mt20 p-3 bg-white">
-                    <table class="table p-4">
-                      <thead>
-                        <tr>
-                          <th scope="col">No</th>
-                          <th scope="col">Nama</th>
-                          <th scope="col">Asal Sekolah</th>
-                          <th scope="col">Status Pendaftaran</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th >1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td colspan="2">Larry the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-12 bg-white penerima-dashboard position-fixed end-0 me-lg-4 me-md-3">
-                <div class="p-4 ">
-                  <div class="py-3 border-bottom">
-                    <h4>Daftar Penerima Beasiswa</h4>
-                  </div>
-
-                  <!-- nama penerima -->
-                  <div class="penerima mt20">
-                    <p>1. Musa Alfian MAulana</p>
-                  </div>
-                </div>
-                
-              </div>
-
-
-
-            </div>
-            <div class="row mt40">
-              <div class="col-lg-8 col-12 ">
-                <h3>Data Beasiswa Peserta Didik</h3>
-
-                <div class="mt20 p-3 bg-white">
-                  <table class="table p-4">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Asal Sekolah</th>
-                        <th scope="col">Status Pendaftaran</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th >1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
-                </div>
-
-              </div>
-            </div>
-            <div class="row mt40">
-              <div class="col-lg-8 col-12 ">
-                <h3>Data Beasiswa Calon Mahasiswa</h3>
-
-                <div class="mt20 p-3 bg-white">
-                  <table class="table p-4">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Asal Sekolah</th>
-                        <th scope="col">Status Pendaftaran</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th >1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
-                </div>
-
-              </div>
-            </div>
-            <div class="row mt40">
-              <div class="col-lg-8 col-12 ">
-                <h3>Data Beasiswa Calon Mahasiswa</h3>
-
-                <div class="mt20 p-3 bg-white">
-                  <table class="table p-4">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Asal Sekolah</th>
-                        <th scope="col">Status Pendaftaran</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th >1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-            
+      <div class="list-group px-3 mt15">
+        <div class="p-2 menu ">
+          <a class="" href="index.html"><i class="bi bi-house-door-fill"></i> Dashbord</a>
         </div>
-        <footer class="p25 bg-white tengah bottom-0">
-            <small class="mx-auto bold" style="color: #B0B0B0;font-size: 10px;"> <span class="biru">©2022.</span> Dinas Pendidikan dan Kebudayaan Kabupaten Batang. All rights reserved</small>
+        <div class="p-2 menu">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-card-text"></i>Data Pendaftaran
+            </a>
 
-        </footer>
+            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="data_pendaftaran/data_pendaftaran_siswa.html">SMA sederajat</a></li>
+              <li><a class="dropdown-item" href="data_pendaftaran/data_pendaftaran_calon_mhs.html">Calon Mahasiswa</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="data_pendaftaran/data_pendaftaran_mahasiswa.html">Mahasiswa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-2 menu">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-check-circle-fill"></i></i>Daftar Penerima
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="daftar_penerima/daftar_penerima_siswa.html">SMA Sederajat</a></li>
+              <li><a class="dropdown-item" href="daftar_penerima/daftar_penerima_calon_mhs.html">Calon Mahasiswa</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="daftar_penerima/daftar_penerima_mahasiswa.html">Mahasiswa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-2 menu">
+          <a class="" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i
+              class="bi bi-door-open-fill"></i>Logout</a>
+        </div>
       </div>
     </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper " class="wrap" style="width: 100%">
+      <!-- Top navigation-->
+      <nav class="navbar nav-admin navbar-expand-lg border-bottom bg-biru p-2 py-3 border-s" id="navbar">
+        <div class="icon-navbar">
+          <!-- <i class="bi bi-list icon_list" style="cursor: pointer; font-size: 20px" id="sidebarToggle"></i> -->
+          <i class="bi bi-three-dots-vertical icon_dot" style="cursor: pointer; font-size: 20px" id="sidebarToggle"></i>
+        </div>
+        <div class="logo-admin d-flex align-items-center mx-auto">
+          <img class="me-3" src="../assets/img/logo-kabupaten-batang 2.png" alt="">
+          <h4 class="d-flex align-items-center ms-2">
+            Dinas Pendidikan dan Kebudayaan <br />
+            Kabupaten Batang
+          </h4>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+      </nav>
+      <!-- Page content-->
+      <div class=" bg-abu ">
+        <div class="p40 admin-content mx-auto position-relative">
+          <h3>Overview</h3>
+          <div class="row mt40 position-relative">
+            <div class="col-lg-8 col-12 ">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="p-4 bg-white">
+                    <div class="tengah flex-column">
+                      <h2 class="biru text-center">200</h2>
+                      <p class="biru text-center">Pendaftaran Beasiswa</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="p-4 bg-white">
+                    <div class="tengah flex-column">
+                      <h2 class="biru text-center">200</h2>
+                      <p class="biru text-center">Pendaftaran Beasiswa</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="p-4 bg-white">
+                    <div class="tengah flex-column">
 
-    <script>
-      // sidebar
-      window.addEventListener("DOMContentLoaded", (event) => {
-        // Toggle the side navigation
-        const sidebarToggle = document.body.querySelector("#sidebarToggle");
-        if (sidebarToggle) {
-          sidebarToggle.addEventListener("click", (event) => {
-            event.preventDefault();
-            document.body.classList.toggle("sb-sidenav-toggled");
-            localStorage.setItem(
-              "sb|sidebar-toggle",
-              document.body.classList.contains("sb-sidenav-toggled")
-            );
-          });
-        }
-      });
-    </script>
-  </body>
+                      <h2 class="biru text-center">200</h2>
+                      <p class="biru text-center">Pendaftaran Beasiswa</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 bg-white penerima-dashboard position-fixed end-0 me-lg-4 me-md-3">
+              <div class="p-4 ">
+                <div class="py-3 border-bottom">
+                  <h4>Daftar Penerima Beasiswa</h4>
+                </div>
+
+                <!-- nama penerima -->
+                <div class="penerima mt20">
+                  <p>1. Musa Alfian MAulana</p>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar penerima -->
+          </div>
+          <!-- end overview -->
+          <div class="row mt40">
+            <div class="col-lg-8 col-12 ">
+              <h3>Data Beasiswa Peserta Didik</h3>
+              <div class="mt20 p-3 bg-white">
+                <table class="table p-4">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Asal Sekolah</th>
+                      <th scope="col">Status Pendaftaran</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>Larry</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
+              </div>
+
+            </div>
+          </div>
+          <!-- end peserta didik -->
+          <div class="row mt40">
+            <div class="col-lg-8 col-12 ">
+              <h3>Data Beasiswa Calon Mahasiswa</h3>
+
+              <div class="mt20 p-3 bg-white">
+                <table class="table p-4">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Asal Sekolah</th>
+                      <th scope="col">Status Pendaftaran</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
+              </div>
+
+            </div>
+          </div>
+          <!-- end calon mahasiswa -->
+          <div class="row mt40">
+            <div class="col-lg-8 col-12 ">
+              <h3>Data Beasiswa Mahasiswa</h3>
+
+              <div class="mt20 p-3 bg-white">
+                <table class="table p-4">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Asal Sekolah</th>
+                      <th scope="col">Status Pendaftaran</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="" class="btn btn-primary mt40">Lihat Selengkapnya --></a>
+              </div>
+
+            </div>
+          </div>
+          <!-- end mahasiswa -->
+        </div>
+      </div>
+      <footer class="p25 bg-white tengah bottom-0">
+        <small class="mx-auto bold" style="color: #B0B0B0;font-size: 10px;"> <span class="biru">©2022.</span> Dinas
+          Pendidikan dan Kebudayaan Kabupaten Batang. All rights reserved</small>
+
+      </footer>
+    </div>
+  </div>
+
+  <!-- LOGOUT  Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="logoutModalLabel">
+            Anda yakin akan keluar?
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Pilih "Logout" dibawah jika anda ingin mengakhiri sesimu sekarang.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Batal
+          </button>
+          <a href="/index.html" class="btn btn-danger">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Datatables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js">
+  </script>
+  <!-- JS Custom -->
+  <script src="/assets/js/script.js"></script>
+  <script>
+    // sidebar
+    window.addEventListener("DOMContentLoaded", (event) => {
+      // Toggle the side navigation
+      const sidebarToggle = document.body.querySelector("#sidebarToggle");
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener("click", (event) => {
+          event.preventDefault();
+          document.body.classList.toggle("sb-sidenav-toggled");
+          localStorage.setItem(
+            "sb|sidebar-toggle",
+            document.body.classList.contains("sb-sidenav-toggled")
+          );
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>

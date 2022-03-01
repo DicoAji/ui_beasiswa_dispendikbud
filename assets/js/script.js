@@ -26,3 +26,116 @@ $(document).ready(function () {
     $("#nav__guru").addClass("active");
   }
 });
+
+/*** ADMIN ***/
+
+//Datatables
+$(document).ready(function () {
+  // Add Row
+  $("#table_data_pendaftaran").DataTable({
+    pageLength: 5,
+    language: {
+      info: "Menampilkan _END_ dari _TOTAL_ baris",
+      infoEmpty: "Menampilkan 0 sampai 0 of 0 baris",
+      infoFiltered: "(filtered from _MAX_ total entries)",
+      infoPostFix: "",
+      thousands: ",",
+      lengthMenu: "Menampilkan _MENU_ baris",
+      loadingRecords: "Tunggu...",
+      processing: "Memproses...",
+      search: "Cari:",
+      zeroRecords: "Tidak ada data yang ditemukan",
+      paginate: {
+        first: "Pertama",
+        last: "Terakhir",
+        next: "Selanjutnya",
+        previous: "Sebelumnya",
+      },
+    },
+  });
+  $("#tabel__guru").DataTable({
+    pageLength: 5,
+    language: {
+      info: "Menampilkan _END_ dari _TOTAL_ baris",
+      infoEmpty: "Menampilkan 0 sampai 0 of 0 baris",
+      infoFiltered: "(filtered from _MAX_ total entries)",
+      infoPostFix: "",
+      thousands: ",",
+      lengthMenu: "Menampilkan _MENU_ baris",
+      loadingRecords: "Tunggu...",
+      processing: "Memproses...",
+      search: "Cari:",
+      zeroRecords: "Tidak ada data yang ditemukan",
+      paginate: {
+        first: "Pertama",
+        last: "Terakhir",
+        next: "Selanjutnya",
+        previous: "Sebelumnya",
+      },
+    },
+  });
+  $("#tabel__sekolah").DataTable({
+    pageLength: 5,
+    language: {
+      info: "Menampilkan _END_ dari _TOTAL_ baris",
+      infoEmpty: "Menampilkan 0 sampai 0 of 0 baris",
+      infoFiltered: "(filtered from _MAX_ total entries)",
+      infoPostFix: "",
+      thousands: ",",
+      lengthMenu: "Menampilkan _MENU_ baris",
+      loadingRecords: "Tunggu...",
+      processing: "Memproses...",
+      search: "Cari:",
+      zeroRecords: "Tidak ada data yang ditemukan",
+      paginate: {
+        first: "Pertama",
+        last: "Terakhir",
+        next: "Selanjutnya",
+        previous: "Sebelumnya",
+      },
+    },
+  });
+  $("#tabel__soal").DataTable({
+    pageLength: 20,
+    autoWidth: false,
+    language: {
+      info: "Menampilkan _END_ dari _TOTAL_ baris",
+      infoEmpty: "Menampilkan 0 sampai 0 of 0 baris",
+      infoFiltered: "(filtered from _MAX_ total entries)",
+      infoPostFix: "",
+      thousands: ",",
+      lengthMenu: "Menampilkan _MENU_ baris",
+      loadingRecords: "Tunggu...",
+      processing: "Memproses...",
+      search: "Cari:",
+      zeroRecords: "Tidak ada data yang ditemukan",
+      paginate: {
+        first: "Pertama",
+        last: "Terakhir",
+        next: "Selanjutnya",
+        previous: "Sebelumnya",
+      },
+    },
+  });
+  $("#tabel__akun").DataTable({
+    pageLength: 10,
+    language: {
+      info: "Menampilkan _END_ dari _TOTAL_ baris",
+      infoEmpty: "Menampilkan 0 sampai 0 of 0 baris",
+      infoFiltered: "(filtered from _MAX_ total entries)",
+      infoPostFix: "",
+      thousands: ",",
+      lengthMenu: "Menampilkan _MENU_ baris",
+      loadingRecords: "Tunggu...",
+      processing: "Memproses...",
+      search: "Cari:",
+      zeroRecords: "Tidak ada data yang ditemukan",
+      paginate: {
+        first: "Pertama",
+        last: "Terakhir",
+        next: "Selanjutnya",
+        previous: "Sebelumnya",
+      },
+    },
+  });
+});
