@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beasiswa Batang | Daftar Beasiswa</title>
+
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -16,12 +17,13 @@
   <!-- ICON -->
   <script src="https://kit.fontawesome.com/5fbcc24921.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- CSS Custom -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 <body>
@@ -29,7 +31,7 @@
   <nav class="navbar navbar-expand-lg bg-biru" id="navbar">
     <div class="container">
       <div class="navbar-brand logo d-flex me-auto">
-        <img class="d-inline" src="assets/img/logo-kabupaten-batang 2.png" alt="" />
+        <img class="d-inline" src="../../assets/img/logo-kabupaten-batang 2.png" alt="" />
         <h4 class="d-flex align-items-center ms-2">
           Dinas Pendidikan dan Kebudayaan <br />
           Kabupaten Batang
@@ -91,66 +93,114 @@
       </div>
     </div>
   </nav>
-  <!-- End navbar -->
 
-  <!-- Jalur beasiswa -->
-  <div class="bg-abu py40">
+  <!-- Form pendaftaran -->
+  <div class="bg-abu p40">
     <div class="container">
-      <h2 class="text-center">Jalur Beasiswa</h2>
-      <div class="row mt40 justify-content-lg-between justify-content-around jalur_beasiswa">
-        <!-- Peserta didik -->
-        <div class="card__beasiswa col-lg-4 mb20 mb-lg-0 col-md-5 col-12 border gx-1 p-5 bg-white">
-          <div class="text-center">
-            <img src="assets/img/tut wuri handayani.png" alt="" />
+      <form action="" method="post">
+        <!-- Kondisi Keluarga -->
+        <h2 class="mb40">Form Pendaftaran Beasiswa SMA/SMK/MA Sederajat</h2>
+        <h3 class="mb20">B. Kondisi Keluarga</h3>
+        <div class="row mb40">
+          <div class="col-12 col-md-6">
+            <div class="mb20">
+              <label for="nama_ayah" class="form-label">Nama Ayah / Wali <span class="required-label">*</span></label>
+              <input type="text" class="form-control" id="nama_ayah" placeholder="" />
+            </div>
+            <!-- end nama ayah -->
+            <div class="mb20">
+              <label for="pekerjaan_ayah" class="form-label">Pekerjaan Ayah / Wali
+                <span class="required-label">*</span></label>
+              <input type="text" class="form-control" id="pekerjaan_ayah" placeholder="" />
+            </div>
+            <!-- end pekerjaan ayah -->
+            <div class="mb20">
+              <label for="pendidikan_terakhir_ayah" class="form-label">Pendidikan Terakhir Ayah / Wali
+                <span class="required-label">*</span></label>
+              <select class="form-select" aria-label="Default select example" name="pendidikan_terakhir_ayah">
+                <option selected hidden></option>
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma">SMA</option>
+                <option value="d1">D1</option>
+                <option value="d3">D3</option>
+                <option value="s1">S1</option>
+                <option value="s2">S2</option>
+                <option value="s3">S3</option>
+              </select>
+            </div>
+            <!-- end Pendidikan Terakhir Ayah / Wali -->
+            <div class="mb20">
+              <label for="penghasilan_ayah" class="form-label">Penghasilan per Bulan Ayah / Wali
+                <span class="required-label">*</span></label>
+              <input type="text" class="form-control" id="penghasilan_ayah" placeholder="" />
+            </div>
+            <!-- end Pneghasilan ayah -->
+            <div class="mb20">
+              <label for="alamat_ayah" class="form-label">Alamat Ayah / Wali
+                <span class="required-label">*</span></label>
+              <textarea class="form-control" name="alamat_ayah" id="alamat_ayah" rows="5"></textarea>
+            </div>
+            <!-- end alamat -->
           </div>
-          <div class="deskripsi text-center">
-            <h4 class="mt-5 mb-2">Peserta Didik</h4>
-            <p class="">
-              Beasiswa bagi peserta didik <br />
-              SMA/SMK/MA sederajat
-            </p>
-            <a class="btn btn-primary d-block mt25" href="form_pendaftaran/siswa/form_identitas_siswa.html">Daftar</a>
+          <!-- Ayah / Wali -->
+          <div class="col-12 col-md-6">
+            <div class="mb20">
+              <label for="nama_ibu" class="form-label">Nama Ibu / Wali <span class="required-label">*</span></label>
+              <input type="text" class="form-control" id="nama_ibu" placeholder="" />
+            </div>
+            <!-- end nama Ibu / Wali -->
+            <div class="mb20">
+              <label for="pekerjaan_ibu" class="form-label">Pekerjaan Ibu / Wali
+                <span class="required-label">*</span></label>
+              <input type="text" class="form-control" id="pekerjaan_ibu" placeholder="" />
+            </div>
+            <!-- end pekerjaan Ibu / Wali -->
+            <div class="mb20">
+              <label for="pendidikan_terakhir_ibu" class="form-label">Pendidikan Terakhir Ibu / Wali
+                <span class="required-label">*</span></label>
+              <select class="form-select" aria-label="Default select example" name="pendidikan_terakhir_ibu">
+                <option selected hidden></option>
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma">SMA</option>
+                <option value="d1">D1</option>
+                <option value="d3">D3</option>
+                <option value="s1">S1</option>
+                <option value="s2">S2</option>
+                <option value="s3">S3</option>
+              </select>
+            </div>
+            <!-- end Pendidikan Terakhir Ibu / Wali -->
+            <div class="mb20">
+              <label for="penghasilan_ibu" class="form-label">Penghasilan per Bulan Ibu / Wali
+                <span class="required-label">*</span></label>
+              <input type="text" class="form-control" id="penghasilan_ibu" placeholder="" />
+            </div>
+            <!-- end Pneghasilan Ibu / Wali -->
+            <div class="mb20">
+              <label for="alamat_ibu" class="form-label">Alamat Ibu / Wali
+                <span class="required-label">*</span></label>
+              <textarea class="form-control" name="alamat_ibu" id="alamat_ibu" rows="5"></textarea>
+            </div>
+            <!-- end alamat -->
+          </div>
+          <!-- end Ibu / Wali -->
+        </div>
+        <!-- end kondisi keluarga -->
+        <div class="row pb40">
+          <div class="col-12 text-end">
+            <a href="form_lampiran_siswa.html" class="btn btn-success fs18 me-3 px-4 py-2">Save</a>
+            <button type="submit" class="btn btn-primary fs18 px-4 py-2">
+              Kirim
+            </button>
           </div>
         </div>
-        <!-- End peserta didik -->
-
-        <!-- Calon mahasiswa -->
-        <div class="card__beasiswa col-lg-4 mb20 mb-lg-0 col-md-5 col-12 border gx-1 p-5 bg-white">
-          <div class="text-center">
-            <img src="assets/img/tut wuri handayani.png" alt="" />
-          </div>
-          <div class="deskripsi text-center">
-            <h4 class="mt-5 mb-2">Calon Mahasiwa</h4>
-            <p class="">
-              Beasiswa bagi peserta didik lulusan SMA/SMK/MA dari daerah
-            </p>
-            <a class="btn btn-primary d-block mt25"
-              href="form_pendaftaran/calon_mhs/form_identitas_calon_mhs.html">Daftar</a>
-          </div>
-        </div>
-        <!-- End calon mahasiswa -->
-
-        <!-- Mahasiswa -->
-        <div class="card__beasiswa col-lg-4 mb20 mb-lg-0 col-md-5 col-12 border gx-1 p-5 bg-white">
-          <div class="text-center">
-            <img src="assets/img/tut wuri handayani.png" alt="" />
-          </div>
-          <div class="deskripsi text-center">
-            <h4 class="mt-5 mb-2">Mahasiswa</h4>
-            <p class="">
-              Beasiswa bagi mahasiswa <br />
-              dari Kabupaten Batang
-            </p>
-            <a class="btn btn-primary d-block mt25" href="form_pendaftaran/mhs/form_identitas_mhs.html">Daftar</a>
-          </div>
-        </div>
-        <!-- End mahasiswa -->
-      </div>
+      </form>
     </div>
   </div>
-  <!-- End jalur beasiswa -->
+  <!-- End form pendaftaran -->
 
-  <!-- Footer -->
   <footer class="bg-biru pt20 pb20">
     <div class="tengah">
       <p class="bold">
@@ -159,7 +209,6 @@
       </p>
     </div>
   </footer>
-  <!-- End footer -->
 
   <!-- LOGOUT  Modal -->
   <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
@@ -178,14 +227,13 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
             Batal
           </button>
-          <a href="<?= base_url(); ?>/logout" class="btn btn-danger">Logout</a>
+          <a href="/admin/daftar_penerima.html" class="btn btn-danger">Logout</a>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Custom Js -->
-  <script src="../assets/js/script.js"></script>
+  <script src="../../assets/js/script.js"></script>
 </body>
 
 </html>
