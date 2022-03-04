@@ -330,7 +330,7 @@ label {
 /*            FORM SMA              */
 /************************************/
 /* textarea */
-.alamat textarea{
+.alamat textarea {
   min-height: 219px;
 }
 
@@ -338,7 +338,7 @@ label {
 /*       FORM Calon Mahasiswa       */
 /************************************/
 /* textarea */
-.form__calon textarea{
+.form__calon textarea {
   border-radius: 0 !important;
 }
 .alamat__calon textarea {
@@ -349,7 +349,7 @@ label {
 /*     EDIT FORM CALON MAHASISWA    */
 /************************************/
 /* textarea */
-.edit__calon textarea{
+.edit__calon textarea {
   border-radius: 0 !important;
 }
 .edit__alamat__calon textarea {
@@ -507,3 +507,7 @@ tr {
 /**********************************************************/
 /*         ============== END ADMIN ============          */
 /**********************************************************/
+
+.pengumuman {
+  background-color: #0cc23f;
+}
